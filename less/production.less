@@ -1,0 +1,93 @@
+@import '../css/jquery.mCustomScrollbar.css';
+
+body {
+	&.production {
+		height:100%;
+
+		.main-content {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+
+			h2 {
+				font-family: 'HelveticaNeueCondensedBold',helvetica;
+				font-size: 1.7em;
+				text-transform: uppercase;
+			}
+			p {
+				font-family: 'HelveticaNeueThin',helvetica;
+				font-size: 0.9em;
+				line-height: 1.4em;
+			}
+
+			.mCustomScrollbar {
+				height: 100%;
+				padding-top: 87px;
+				
+				.mCSB_scrollTools {
+					visibility: hidden;
+				}
+				
+				.container-middle {
+					overflow: hidden;
+					background: black;
+					padding: 0;
+					position: relative;
+					height: 40%;
+
+					img {
+						transition: all 0.5s;
+						-moz-transition: all 0.5s;
+						-webkit-transition: all 0.5s;
+
+						position: relative;
+						max-width: none;
+						width: 100%;
+						height: auto;
+						left: 0;
+
+					}
+					&:hover {
+						img {
+							opacity: 0.6;
+							width: -10%;
+						}
+					}
+				}
+
+				.container-layout {
+					overflow: hidden;
+					background: black;
+					padding: 0;
+					position: relative;
+					height: 40%;
+
+					figcaption {
+						position: absolute;
+						z-index: 9;
+					}
+
+					img {
+						transition: all 0.5s;
+						-moz-transition: all 0.5s;
+						-webkit-transition: all 0.5s;
+
+						position: relative;
+						max-width: none;
+						width: auto;
+						height: 100%;
+						left: 0;
+					}
+
+					&:hover {
+						img {
+							opacity: 0.6;
+							left: -10%;
+						}
+					}
+				}
+			}
+		}		
+	}	
+}
+
