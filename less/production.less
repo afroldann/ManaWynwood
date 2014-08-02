@@ -3,11 +3,155 @@
 body {
 	&.production {
 		height:100%;
-
 		.main-content {
 			height: 100%;
 			width: 100%;
 			position: absolute;
+			padding-top: 87px;
+			top: 0;
+			
+			.mana-x {
+				.row {
+					float: left;
+					height: 100%;
+					.columns {
+						padding: 1px;
+						height: 100%;
+						
+						&.middle-1 {
+							height: 10%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-2 {
+							height: 20%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-3 {
+							height: 30%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-4 {
+							height: 40%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-5 {
+							height: 50%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-6 {
+							height: 60%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-7 {
+							height: 70%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-8 {
+							height: 80%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-9 {
+							height: 90%;
+							img {
+								height: 100%;
+								width: auto!important;
+								max-width: none;
+							}
+						}
+						&.middle-10 {
+							height: 100%;
+						}
+
+						&:last-child {
+							float: left;
+						}
+
+						.panel {
+							height: 100%;
+							padding: 0;
+							overflow: hidden;
+							border: 0;
+							background: none;
+							a {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								background-color: rgba(0,0,0,0.4);
+								background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), transparent);
+								background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
+							}
+							.text {
+								padding: 10px 20px 10px 20px;
+								text-align: justify;
+								h5 {
+									line-height: 1;
+									font-size: 2em;
+									text-tansform: uppercase;
+									font-family: 'HelveticaNeueCondensedBold',helvetica;
+								}
+							}
+							.caption {
+								position: absolute;
+								right: 20px;
+								top: 20px;
+								width: 35%;
+								text-align: right;
+								h2 {
+									line-height: 1;
+									font-size: 2.3em;
+									text-tansform: uppercase;
+									font-family: 'HelveticaNeueCondensedBold',helvetica;
+									color: @w-white;
+								}
+								p {
+
+								}
+							}
+
+
+							img {
+								width: 100%;
+								max-width: none;
+								posiion: absolute;
+							}
+						}
+					}	
+				}
+			}
 
 			h2 {
 				font-family: 'HelveticaNeueCondensedBold',helvetica;
@@ -22,69 +166,45 @@ body {
 
 			.mCustomScrollbar {
 				height: 100%;
-				padding-top: 87px;
-				
+				padding-top: 0;
+				.mCSB_container {
+					height: 100%;
+					min-width: 2100px; 
+					section {
+						height: 100%;
+						float: left;
+
+						article {
+							height: 100%;
+							float: left!important;
+							.container-middle-image {
+								height: 50%;
+								overflow: hidden;
+								img {
+									max-width: none;
+									width: auto;
+									height: 50%;
+								}
+							}
+							.columns {
+								&:last-child {
+									float: left;
+								}
+							}
+							.container-image {
+								height: 100%;
+								overflow: hidden;
+								img {
+									max-width: none;
+									width: auto;
+									height: 100%;
+								}
+							}
+						}
+					}
+				}
 				.mCSB_scrollTools {
 					visibility: hidden;
-				}
-				
-				.container-middle {
-					overflow: hidden;
-					background: black;
-					padding: 0;
-					position: relative;
-					height: 40%;
-
-					img {
-						transition: all 0.5s;
-						-moz-transition: all 0.5s;
-						-webkit-transition: all 0.5s;
-
-						position: relative;
-						max-width: none;
-						width: 100%;
-						height: auto;
-						left: 0;
-
-					}
-					&:hover {
-						img {
-							opacity: 0.6;
-							width: -10%;
-						}
-					}
-				}
-
-				.container-layout {
-					overflow: hidden;
-					background: black;
-					padding: 0;
-					position: relative;
-					height: 40%;
-
-					figcaption {
-						position: absolute;
-						z-index: 9;
-					}
-
-					img {
-						transition: all 0.5s;
-						-moz-transition: all 0.5s;
-						-webkit-transition: all 0.5s;
-
-						position: relative;
-						max-width: none;
-						width: auto;
-						height: 100%;
-						left: 0;
-					}
-
-					&:hover {
-						img {
-							opacity: 0.6;
-							left: -10%;
-						}
-					}
 				}
 			}
 		}		
