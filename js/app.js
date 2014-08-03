@@ -3,14 +3,12 @@ var hammerApp = {};
 var url;
 var getUrl;
 var tiempo;
-
 var heightHeader = $('header').height() + $('.navigation').height();
 var heightDetails = $('#details').height();
 var heightDescription = $('#description').height();
 var heightHighlights = $('#highlights').height();
 var windowWidth = $(window).width();
 var windowHeight = $(window).height();
-
 var antes = (new Date()).getTime();
 var htmlContainer = $('html, body');
 var isMobile = {
@@ -23,7 +21,6 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); 
     }
 }
-
 
 jQuery(document).ready(function($){
 
@@ -54,6 +51,16 @@ jQuery(document).ready(function($){
 		axis:"x",
 		advanced:{
 			autoExpandHorizontalScroll: true
+		},
+		mouseWheel:{ 
+			enable: true,
+			normalizeDelta: 1
+		},
+		scrollButtons: {
+			enable: true
+		},
+		keyboard: {
+			enable: true
 		},
 		callbacks:{
 		    onScrollStart: function(){
