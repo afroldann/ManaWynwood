@@ -39,6 +39,10 @@ jQuery(document).ready(function($){
 	function scrollStop(){
 		if(jQuery('body').hasClass('production')){
 	        jQuery('html,body').css('overflow','hidden!important');
+	        jQuery("img").lazyload({
+			    effect : "fadeIn"
+			});
+
 		}else {
 
 		}
