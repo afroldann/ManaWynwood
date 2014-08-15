@@ -45,16 +45,18 @@ jQuery(document).ready(function($){
 		}
 		if(currSliderNum === 1 ){
 			$(logo).fadeOut(550, function(){
-				$(this).attr('src','img/svg/logo-art.svg').fadeIn(550);
+				$(this).attr('src','img/svg/logo-properties.svg').fadeIn(550);
 			});	
 		}
 		if(currSliderNum === 2 ){
 			$(logo).fadeOut(550, function(){
-				$(this).attr('src','img/svg/logo-properties.svg').fadeIn(550);
+				$(this).attr('src','img/svg/logo-art.svg').fadeIn(550);
 			});
 		}
 		if(currSliderNum === 3 ){
-			alert(currSliderNum + 1);
+			$(logo).fadeOut(550, function(){
+				$(this).attr('src','img/svg/logo-art.svg').fadeIn(550);
+			});
 		}
 	});
 });
