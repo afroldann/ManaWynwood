@@ -10,6 +10,7 @@ var heightHighlights = $('#highlights').height();
 var windowWidth = $(window).width();
 var antes = (new Date()).getTime();
 var htmlContainer = $('html, body');
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i); }, BlackBerry: function() {

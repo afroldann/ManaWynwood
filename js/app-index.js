@@ -63,5 +63,6 @@ jQuery(document).ready(function($){
 				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
 			});
 		}
+		
 	});
 });

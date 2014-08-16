@@ -11,6 +11,7 @@ var windowWidth = $(window).width();
 var windowHeight = $(window).height();
 var antes = (new Date()).getTime();
 var htmlContainer = $('html, body');
+
 var isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i); }, BlackBerry: function() {
