@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 	    arrowsNavAutoHide:false,
 	    autoScaleSlider:true, 
 	    autoScaleSliderWidth:960,     
-	    autoScaleSliderHeight:650,
+	    autoScaleSliderHeight:400,
 	    controlNavigation:'none',
 	    thumbsFitInViewport:false,
 	    navigateByClick:true,
