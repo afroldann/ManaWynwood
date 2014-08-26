@@ -8,7 +8,6 @@ var heightDetails = $('#details').height();
 var heightDescription = $('#description').height();
 var heightHighlights = $('#highlights').height();
 var windowWidth = $(window).width();
-var windowHeight = $(window).height();
 var antes = (new Date()).getTime();
 var htmlContainer = $('html, body');
 
@@ -22,9 +21,7 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); 
     }
 }
-
 jQuery(document).ready(function($){
-
 	jQuery(document).keyup(function(e) {
 	  	if (e.keyCode == 27) {
 			jQuery('.contact-container').slideUp();
@@ -33,58 +30,17 @@ jQuery(document).ready(function($){
 			closeMenu();
 	  	}
 	});
-	
-	function scrollStop(){
-		if(jQuery('body').hasClass('production')){
-	        jQuery('html,body').css('overflow','hidden!important');
-	        jQuery("img").lazyload({
-			    effect : "fadeIn"
-			});
-
-		}else {
-
-		}
-	}
-	scrollStop();
-
-	var mana = jQuery(".mana-x");
-	mana.mCustomScrollbar({
-		axis:"x",
-		advanced:{
-			autoExpandHorizontalScroll: true
-		},
-		mouseWheel:{ 
-			enable: true,
-			normalizeDelta: 1
-		},
-		scrollButtons: {
-			enable: true
-		},
-		keyboard: {
-			enable: true
-		},
-		callbacks:{
-		    onScrollStart: function(){
-		    	var mCSB_container = (jQuery('.mCSB_container'));
-		    	var mCSB_containerWidth = (jQuery('.mCSB_container').width());
-		    	mCSB_container.css('width', mCSB_containerWidth + 600);
-		    }
-		}
-	});
-
 	function openMenu(){
 		jQuery('.nav-bar, .overlay-menu').addClass('active');
 		jQuery('.contact-container').slideUp();
 		jQuery('html, body').css('overflow','hidden');
 		return false;
 	}
-
 	function closeMenu(){
 		jQuery('.nav-bar, .overlay-menu').removeClass('active');
 		jQuery('html, body').css('overflow','');
 		return false;
-	}
-
+	}	
 	jQuery("#navigation a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
 		highlightSelector:"#navigation a"
 	});
@@ -130,16 +86,16 @@ jQuery(document).ready(function($){
 		jQuery(htmlContainer).animate({scrollTop:0}, 'linear', function() { 
 			setTimeout(function(){
 				jQuery('#contact-container').slideDown(function(){
-				jQuery(htmlContainer).css('overflow', 'hidden');
+					jQuery(htmlContainer).css('overflow', 'hidden');
 
-			 	jQuery.ajax({
-					url:"contact.html", success:function(result){
-							jQuery('.container-ajax').html(result);
-			    		}
-			    	});
+				 	jQuery.ajax({
+						url:"contact.html", success:function(result){
+								jQuery('.container-ajax').html(result);
+				    		}
+				    	});
 		    	});
 
-			},500);
+			},200);
 		});
 		return false;
 	});
@@ -176,7 +132,8 @@ jQuery(document).ready(function($){
     });
 	    
     setTimeout(function(){
-		jQuery('.loader').fadeOut(TiempoCarga);
+		jQuery('.loader').fadeOut('slow');
+    	TiempoCarga();
 	}, tiempo);
 
 	jQuery('.overlay-menu, .close-menu').on('click', function(){
@@ -410,9 +367,7 @@ jQuery(document).ready(function($){
 			after: 'relative'
 		});
 
-
 	}else {
-
 
 		jQuery('header').scrollAnimate({
 			startScroll: 1,
@@ -421,7 +376,6 @@ jQuery(document).ready(function($){
 			before: 153,
 			after: 87
 		});
-	
 
 		jQuery('body').scrollAnimate({
 			startScroll: 1,
@@ -588,64 +542,6 @@ jQuery(document).ready(function($){
 			before: 71,
 			after: 22
 		});	
-
-		jQuery('.production header').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'height',
-			before: 87,
-			after: 87
-		}).scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'position',
-			before: 'relative',
-			after: 'relative'
-		});
-
-		jQuery('body.production').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'margin-top',
-			before: 0,
-			after: 0
-		});
-
-		jQuery('.production .logo img').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'width',
-			before: 60,
-			after: 60
-		});
-
-		jQuery('.production .logo h1').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'font-size',
-			before: '1.2rem',
-			after: '1.2rem'
-		}).scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'padding',
-			before: '0 0 0 10px',
-			after: '0 0 0 10px'
-		}).scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'top',
-			before: 22,
-			after: 22
-		});
-
-		jQuery('.production .social').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'margin-bottom',
-			before: 10,
-			after: 10
-		});
 	}
 	
 	if(isMobile.any()){
