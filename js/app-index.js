@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){	
 	var sliderJQ = jQuery('#mana-slider').royalSlider({
-	    arrowsNav:true,
-	    loop:false,
+	    arrowsNav: true,
+	    loop: true,
 	    keyboardNavEnabled:true,
 	    controlsInside:false,
 	    imageScaleMode:'fill',
@@ -13,9 +13,13 @@ jQuery(document).ready(function($){
 	    thumbsFitInViewport:false,
 	    navigateByClick:true,
 	    startSlideId:0,
-	    autoPlay:false,
-	    transitionType:'move',
-	    globalCaption:false,
+	    autoPlay: {
+    		enabled: true,
+    		pauseOnHover: false,
+    		delay: 8000
+    	},
+	    transitionType: 'move',
+	    globalCaption: false,
 	    slidesSpacing: 0,
 	    
 	    block: {

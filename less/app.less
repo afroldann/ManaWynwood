@@ -975,7 +975,7 @@ html {
 					width: 40px;
 				}
 				.rsArrowIcn {
-					background: url("../img/svg/sprites-two.svg") no-repeat rgba(0,0,0,0.1);
+					background: url("../img/svg/sprites-two.svg") no-repeat rgba(0,0,0,0.7);
 					border-radius: 50%;
 					cursor: pointer;
 					height: 40px;
@@ -985,11 +985,28 @@ html {
 					width: 40px;
 					padding: 25px;
 				}
-			}		
+			}
+			.layout_black {
+
+				background-image: -webkit-linear-gradient(top, transparent, @w-black-alpha-40);
+				background-image:         linear-gradient(to bottom, trasparent, @w-black-alpha-40);
+
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+
+				-webkit-transition: all 0.3s;
+				-moz-transition: all 0.3s;
+				transition: all 0.3s;
+			}
+
 			.infoBlock {
 				position: absolute;
-				top: 30px;
-				right: 30px;
+				top: auto;
+				bottom: 40px;
+				right: 60px;
 				left: auto;
 				max-width: 35%;
 				padding-bottom: 0;
@@ -1016,7 +1033,7 @@ html {
 				p {
 					font-family: 'HelveticaNeueLight', helvetica;
 					line-height: 1;
-					font-size: 1.2rem;
+					font-size: 1.3rem;
 					margin-top: 10px;
 				}
 				span {
@@ -1056,7 +1073,7 @@ html {
 					min-width: 100%;
 					left: 5px;
 					top: 5px;
-					right: auto;
+					right: 5px!important;
 					font-size: 12px;
 				}
 			}
