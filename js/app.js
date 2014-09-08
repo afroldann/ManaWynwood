@@ -427,7 +427,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'margin-top',
-			before: 153,
+			before: 173,
 			after: 160
 		});
 
@@ -435,7 +435,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'margin-bottom',
-			before: 75,
+			before: 55,
 			after: 10
 		});
 		
@@ -565,7 +565,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'width',
-			before: 123,
+			before: 113,
 			after: 60
 		});
 
@@ -585,7 +585,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'top',
-			before: 71,
+			before: 61,
 			after: 22
 		});	
 
