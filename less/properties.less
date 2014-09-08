@@ -7,6 +7,7 @@ body {
 		height: 380px;
 		padding: 0;
 		
+
 		form {
 			background: @w-white-alpha;
 			padding: 20px;
@@ -14,6 +15,7 @@ body {
 				text-transform: uppercase;
 				font-family: 'HelveticaNeueCondensedBold';
 			}
+
 			.submit-button {
 				font-family: helveticaneuecondensedbold;
 				font-size: 1.1rem;
@@ -45,6 +47,15 @@ body {
 					text-transform: uppercase;
 					font-size: 1em;
 					margin: 1px 0px 0px 7px;
+					&.commercial {
+						color: @w-black;
+					}
+					&.residential {
+						color: @w-red;
+					}
+					&.land {
+						color: green;
+					}
 				}
 				.rowElem {
 					.jqTransformCheckboxWrapper {
@@ -219,7 +230,7 @@ body {
 	      			b {
 	      				font-family: 'HelveticaNeueCondensedBold';
 						text-transform: uppercase;
-						color: @w-black;
+						color: @w-gray-text;
 						font-weight: normal;
 	      			}
 	      			p {
@@ -339,6 +350,25 @@ body {
 						}
 					}
 					dl {
+						dl {
+							width: 95%;
+							float: right;
+							dt {
+								font-family: 'HelveticaNeueLight';
+								text-transform: none;
+								font-size: 1em;
+							}
+							.line {
+								border: none;
+							}
+
+							.button {
+								padding: 10px 20px;
+								color: @w-white;
+								font-size: 0.75em;
+								text-transform: uppercase;
+							}
+						}
 						width: 100%;
 						margin: 0;
 						padding: 0;

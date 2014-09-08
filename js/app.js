@@ -23,6 +23,8 @@ var isMobile = {
     }
 }
 
+$(document).foundation();
+
 jQuery(document).ready(function($){
 
 	jQuery(document).keyup(function(e) {
