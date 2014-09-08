@@ -36,7 +36,7 @@ html {
 				padding: 15px;
 			}
 			p {
-				font-family: 'HelveticaNeueThin',helvetica;
+				font-family: 'HelveticaNeueLight',helvetica;
 				font-size: 0.9em;
 				line-height: 1.4;
 			}
@@ -55,6 +55,9 @@ html {
 		}
 
 		.team {
+			.worker {
+				height: 600px;
+			}
 			.columns {
 				padding: 15px;
 				&:last-child {
@@ -62,7 +65,7 @@ html {
 				}
 			}
 			p {
-				font-family: 'HelveticaNeueThin',helvetica;
+				font-family: 'HelveticaNeueLight',helvetica;
 				font-size: 0.9em;
 				line-height: 1.4;
 			}
@@ -117,7 +120,29 @@ html {
 			}
 
 		}
+		.parthenrs {
+			margin-bottom: 40px;
+			padding-bottom: 40px;
+			border-bottom: 1px solid @w-gray-soft;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					margin: 0;
+					padding: 5px;
+					list-style: none;
+					text-align: center;
+					&:last-child {
+						float: left;
+					}
 
+					&.large-2 {
+						width:12% 
+
+					}
+				}
+			}
+		}
 		.mana {
 			.columns {
 				padding: 15px;
@@ -129,7 +154,7 @@ html {
 				}
 			}
 			p {
-				font-family: 'HelveticaNeueThin',helvetica;
+				font-family: 'HelveticaNeueLight',helvetica;
 				font-size: 0.9em;
 				line-height: 1.4;
 				margin-bottom: 15px;
@@ -155,7 +180,7 @@ html {
 				text-align: center;
 			}
 			p {
-				font-family: 'HelveticaNeueThin',helvetica;
+				font-family: 'HelveticaNeueLight',helvetica;
 				font-size: 0.9em;
 				line-height: 1.4;
 				margin-bottom: 15px;
@@ -694,9 +719,9 @@ html {
 						margin-top: 10px;
 					}
 					p {
-						font-family: 'HelveticaNeueThin', helvetica;
+						font-family: 'HelveticaNeueLight', helvetica;
 						margin: 0;
-						color: @w-black;
+						color: @w-gray-text;
 						line-height: 1;
 					}
 				}
@@ -714,7 +739,7 @@ html {
 			width: 100%;
 			padding-top: 40px;
 			background: url('../img/svg/mana-footer.svg') no-repeat 35% bottom @w-gray-soft;
-			font-family: 'HelveticaNeueThin', helvetica;
+			font-family: 'HelveticaNeue', helvetica;
 			h2 {
 			 	font-family: 'HelveticaNeueCondensedBold', helvetica;
 			 	color: @w-gray-menu;
@@ -830,6 +855,10 @@ html {
 				}
 
 				p {
+					&:first-child {
+						font-weight: bold;
+					}
+					font-weight: bold;
 					font-size: 0.85rem;
 					position: relative;
 					text-align: left;
@@ -843,6 +872,7 @@ html {
 						line-height: 1;
 						padding-top: 10px;
 						padding-bottom: 10px;
+						font-weight: normal;
 					}
 					a {
 						color: @w-gray-menu;
@@ -1056,6 +1086,9 @@ html {
 				}
 			}
 			.team {
+				.worker {
+					height: auto;
+				}
 				.large-4 {
 					width: 33.3%;
 				}
