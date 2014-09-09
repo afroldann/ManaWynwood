@@ -437,7 +437,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'margin-bottom',
-			before: 55,
+			before: 65,
 			after: 10
 		});
 		
