@@ -37,7 +37,7 @@ html {
 			}
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
-				font-size: 0.9em;
+				font-size: 1em;
 				line-height: 1.4;
 			}
 			h2 {
@@ -48,15 +48,16 @@ html {
 					text-align: right;
 					border-bottom: 1px solid @w-gray-soft;
 					padding-bottom: 5px;
-					padding-top: 25px;
-					margin-bottom: 25px;
+					padding-top: 0px;
+					margin-bottom: 15px;
+					margin-top: 0;
 				}
 			}
 		}
 
 		.team {
 			.worker {
-				height: 600px;
+				height: 710px;
 			}
 			.columns {
 				padding: 15px;
@@ -66,7 +67,7 @@ html {
 			}
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
-				font-size: 0.9em;
+				font-size: 1em;
 				line-height: 1.4;
 			}
 			
@@ -137,7 +138,7 @@ html {
 					}
 
 					&.large-2 {
-						width:12% 
+						width:12.5% 
 
 					}
 				}
@@ -150,12 +151,12 @@ html {
 				img {
 					position: relative;
 					margin-top: 50%;
-					top: -140px;
+					top: 0;
 				}
 			}
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
-				font-size: 0.9em;
+				font-size: 1em;
 				line-height: 1.4;
 				margin-bottom: 15px;
 				text-align: left;
@@ -181,7 +182,7 @@ html {
 			}
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
-				font-size: 0.9em;
+				font-size: 1em;
 				line-height: 1.4;
 				margin-bottom: 15px;
 				text-align: left;
@@ -1007,7 +1008,27 @@ html {
 				padding-bottom: 0;
 				overflow: hidden;
 				text-align: right;
-				text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+				text-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+				
+				&.left {
+					left: 60px;
+					text-align: left;
+				}
+
+				&.top {
+					top: 30px;
+					bottom: auto;
+				}
+
+				&.right {
+					left: auto;
+					right: 60px;
+				}
+
+				&.bottom {
+					top: auto;
+					botoom: 40px;
+				}
 
 				a {
 					position: absolute;
@@ -1028,7 +1049,7 @@ html {
 				p {
 					font-family: 'HelveticaNeueLight', helvetica;
 					line-height: 1;
-					font-size: 1.3rem;
+					font-size: 1.2rem;
 					margin-top: 10px;
 				}
 				span {
