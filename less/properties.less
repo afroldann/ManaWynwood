@@ -342,6 +342,13 @@ body {
 						clear: both;
 					}
 					.total-result {
+						margin: 0;
+						&.units {
+							div {
+								padding: 5px;
+								margin: 0;
+							}
+						}
 						div {	
 							margin-top: 15px;
 							border: 1px solid @w-gray-prop;
@@ -349,14 +356,28 @@ body {
 							padding: 10px;						
 						}
 					}
+					.button {
+						color: @w-white;
+					}
 					dl {
 						dl {
-							width: 95%;
+							width: 100%;
 							float: right;
+							background: whiteSmoke;
 							dt {
 								font-family: 'HelveticaNeueLight';
 								text-transform: none;
 								font-size: 1em;
+								background: none;
+
+							}
+							dd {
+								background: none;
+							}
+							.title-units {
+								font-family: 'HelveticaNeueCondensedBold';
+								color: @w-red;
+								text-transform: uppercase;
 							}
 							.line {
 								border: none;
