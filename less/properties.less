@@ -132,7 +132,7 @@ body {
 		-moz-transition: all 0.9s;
 		
 		.center-content {
-			padding-top: 30px;
+			padding-top: 15px;
 			margin-top: 20px;
 			border-top: solid 1px @w-gray-soft;
 
@@ -199,12 +199,12 @@ body {
 		      		.share-container {
 						position: absolute;
 						top: 175px;
-						width: 313px;
-						height: 70px;
+						width: 100%;
+						height: 230px;
 						border-bottom: 1px solid @w-gray-soft;
 						background: @w-white-alpha;
-						left: 14px;
-						padding: 15px; 
+						left: 0;
+						padding: 0; 
 						display: none;
 
 						ul {
@@ -214,24 +214,31 @@ body {
 							li {
 								text-align: center;
 								&.facebook-share {
-									margin-top: -5px;
-								}	
+									margin-top: 25px;
+								}
+								&.twitter-share {
+									margin-top: 25px;
+								}
+								&.linkedin-share {
+									margin-top: 25px;
+								}
 							}
 						}
 		      		}
 		      		.map {
 		      			width: 100%;
-		      			height: 261px;
+		      			height: 265px;
 		      			background: black;
 		      		}
 
 		      		.add-sq {
 		      			font-size: 1.2em;
 		      			width: 100%;
-		      			padding: 10px 0 10px 0;
+		      			padding: 10px 0px 10px 45px;
+		      			background: url('../img/png/sprites.png') no-repeat left -1041px;
 		      			border-top: 1px solid @w-gray-soft; 
 		      			border-bottom: 1px solid @w-gray-soft; 
-		      			
+
 		      			b {
 		      				font-family: 'HelveticaNeueCondensedBold';
 							text-transform: uppercase;

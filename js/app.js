@@ -147,11 +147,11 @@ jQuery(document).ready(function($){
 	});
 	
  	function closeShare(){
- 		jQuery('.share-container').slideUp();
+ 		jQuery('.share-container').fadeOut();
  	}
 
  	function openShare(){
- 		jQuery('.share-container').slideDown();
+ 		jQuery('.share-container').fadeIn();
  	}
 
     function gotoUrl(){
