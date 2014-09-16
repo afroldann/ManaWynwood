@@ -553,7 +553,7 @@ jQuery(document).ready(function($){
 			startScroll: 550,
 			endScroll: 550,
 			cssProperty: 'width',
-			before: '100%',
+			before: '90%',
 			after: 325
 		}).scrollAnimate({
 			startScroll: heightHighlights + heightDetails + heightDescription + 600,
@@ -561,6 +561,12 @@ jQuery(document).ready(function($){
 			cssProperty: 'opacity',
 			before: 1,
 			after: 0
+		}).scrollAnimate({
+			startScroll: 520,
+			endScroll: 520,
+			cssProperty: 'margin-left',
+			before: '10%',
+			after: 10
 		});
 
 		jQuery('.logo img').scrollAnimate({
