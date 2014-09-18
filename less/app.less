@@ -484,7 +484,7 @@ html {
 			top: 0;
 			left: 0;
 			height: 153px;
-			z-index: 99;
+			z-index: 100;
 
 			transition: all .3s ease-out;
 			-webkit-transition: all .3s ease-out;
@@ -721,7 +721,7 @@ html {
 						margin: 0;
 						color: @w-black;
 						text-transform: uppercase;
-						font-size: 1.2rem;
+						font-size: 1.1rem;
 						margin-top: 10px;
 					}
 					p {
@@ -1054,7 +1054,7 @@ html {
 					font-family: 'HelveticaNeueCondensedBold', helvetica;
 					color: @w-white;
 					text-transform: uppercase;
-					font-size: 4em;
+					font-size: 3.3em;
 					line-height: 3.5rem;
 				}
 				p {
@@ -1182,7 +1182,7 @@ html {
 					width: 300px;
 					height: 100%;
 					top: 0;
-					right: -300px;
+					right: -350px;
 					padding-top: 30px;
 					position: fixed;
 					display: block;
@@ -1291,6 +1291,18 @@ html {
 					display: none!important;
 				}
 				.infoBlock  {
+					&.center {
+						bottom: auto;
+					    left: 0;
+					    margin-left: -121px;
+					    margin-top: -65px;
+					    right: auto;
+					    top: 50%;
+					    width: 100px;
+						img {
+							width: 100px;
+						}
+					}
 					h4 {
 						font-size: 2.5em;
 					}

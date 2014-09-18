@@ -94,12 +94,14 @@ jQuery(document).ready(function($){
 	jQuery('nav.main-menu a').click(function(){
 	    jQuery('nav.main-menu a').removeClass("active");
 	    jQuery(this).addClass("active");
+	    return false;
 	});
 
 	jQuery('.close').on('click', function(){
 		jQuery('.contact-container').slideUp();
 		jQuery(htmlContainer).css('overflow', 'visible');
 		jQuery('.contact-button').removeClass('active');
+	    return false;
 
 	});
 	
