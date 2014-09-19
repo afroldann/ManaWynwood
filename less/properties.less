@@ -718,7 +718,7 @@ body {
 
 }
 
-@media screen and (min-width: 970px) and (max-width: 1240px){
+@media screen and (min-width: 680px) and (max-width: 1240px){
 	body {
 		.property-detail {
 			.center-content {
@@ -746,7 +746,7 @@ body {
 				.text-description {
 					width: 66.6667%;
 					.navigation {
-						width: 675px;
+						width: 688px;
 					}
 				}
 				.sidebar {
@@ -766,8 +766,13 @@ body {
 				margin: 0 auto;
 			}
 		}
-		.royalSlider {
-			width: 65%;
+		.property-detail {
+			.center-content {
+					.royalSlider {
+						width: 65%;
+					}
+			
+			}
 		}
 		.detail-side-picture {
 			width: 35%;
@@ -848,7 +853,7 @@ body {
 	} 
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
 
 	body {
 		.container-browser {
@@ -856,6 +861,31 @@ body {
 				width: 100%;
 				float: none;
 				margin: 0 auto;
+			}
+		}
+		.property-description {
+			.row {
+				max-width: 100%;
+				.text-description {
+					width: 100%;
+				} 
+			}
+		}
+		.property-detail {
+			.center-content {
+					#sliderDetailProperty {
+						width: 100%;
+					}
+					.detail-side-picture {
+						width: 100%;
+						margin-top: 20px;
+						
+						.detal-content {
+							.map {
+								height: 120px;
+							}
+						}
+					}
 			}
 		}
 		.royalSlider {
