@@ -199,9 +199,9 @@ jQuery(document).ready(function($){
 	      nativeFS: true
 	    },
 	    controlNavigation: 'thumbnails',
-	    autoScaleSlider: false, 
+	    autoScaleSlider: true, 
 	    autoScaleSliderWidth: 960,     
-	    autoScaleSliderHeight: 850,
+	    autoScaleSliderHeight: 670,
 	    loop: true,
 	    imageScaleMode: 'fill',
 	    navigateByClick: true,
@@ -452,8 +452,8 @@ jQuery(document).ready(function($){
 		});
 
 		jQuery('.download-brochure-container').scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'top',
 			before: 0,
 			after: 250
@@ -464,16 +464,16 @@ jQuery(document).ready(function($){
 			before: 1,
 			after: 0
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'position',
 			before: 'relative',
 			after: 'fixed'
 		});
 
 		jQuery('.navigation').scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'position',
 			before: 'absolute',
 			after: 'fixed'
@@ -484,16 +484,16 @@ jQuery(document).ready(function($){
 			before: 1,
 			after: 0
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'top',
 			before: 0,
 			after: 87
 		});
 		
 		jQuery('#details').scrollAnimate({
-			startScroll: 570,
-			endScroll: 570,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'padding',
 			before: '50px 0px 10px 0px',
 			after: '130px 0px 0 0px'
@@ -516,44 +516,44 @@ jQuery(document).ready(function($){
 		});
 		
 		jQuery('.scrolling-detail').scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'position',
 			before: 'relative',
 			after: 'fixed'
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'top',
 			before: '',
 			after: 87
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'padding-top',
 			before: 0,
 			after: 10
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'border-top',
 			before: 'none',
 			after: 'solid'
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'border-width',
 			before: '',
 			after: 1
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'border-color',
 			before: '',
 			after: '#F2F2F2'
 		}).scrollAnimate({
-			startScroll: 550,
-			endScroll: 550,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'width',
 			before: '90%',
 			after: 325
@@ -564,8 +564,8 @@ jQuery(document).ready(function($){
 			before: 1,
 			after: 0
 		}).scrollAnimate({
-			startScroll: 520,
-			endScroll: 520,
+			startScroll: 620,
+			endScroll: 620,
 			cssProperty: 'margin-left',
 			before: '10%',
 			after: 10
