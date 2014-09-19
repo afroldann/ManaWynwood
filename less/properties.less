@@ -491,7 +491,7 @@ body {
 				}
 
 				&.description {
-					border: none;
+					border: none!important;
 					li, p, span {
 						font-family: 'HelveticaNeueLight';
 						font-size: 1em;
@@ -584,13 +584,28 @@ body {
 					transition: all 0.2s;
 					-webkit-transition: all 0.2s;
 					-moz-transition: all 0.2s;
-					
+
 					font-size: 1.45em;
 					color: @w-gray-forms;
 					padding-right: 60px;
+					background: url('../img/png/sprites.png') no-repeat 115px -377px;
 					
+					&:first-child {
+						background-position: 180px -377px;
+						&.mPS2id-highlight-first {
+							background-position: 180px -477px;						
+						}
+					}
+					&:last-child {
+						background-position: 135px -377px;
+						&.mPS2id-highlight-first {
+							background-position: right -477px;
+						}
+					}
+
 					&.mPS2id-highlight-first {
 						color: @w-black;
+						background-position: 120px -477px;
 					}
 
 					&:hover {
