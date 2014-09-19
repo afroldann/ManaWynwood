@@ -478,8 +478,8 @@ jQuery(document).ready(function($){
 			before: 'absolute',
 			after: 'fixed'
 		}).scrollAnimate({
-			startScroll: heightHighlights + heightDetails + heightDescription + 750,
-			endScroll: heightHighlights + heightDetails + heightDescription + 750,
+			startScroll: heightHighlights + heightDetails + heightDescription + 900,
+			endScroll: heightHighlights + heightDetails + heightDescription + 900,
 			cssProperty: 'opacity',
 			before: 1,
 			after: 0
