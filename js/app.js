@@ -22,10 +22,15 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); 
     }
 }
+var navegador = navigator.userAgent;
 
 $(document).foundation();
 
 jQuery(document).ready(function($){
+	
+	if (navigator.userAgent.indexOf('MSIE') !=-1) {
+		jQuery('body').addClass('explorer');		
+	}
 
 	jQuery(document).keyup(function(e) {
 	  	if (e.keyCode == 27) {

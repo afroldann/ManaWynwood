@@ -1,6 +1,21 @@
 @import '../css/jqtransform.css';
 
 body {
+	&.explorer {
+		.property-detail {
+			.center-content {
+				.detail-side-picture {
+					.detal-content {
+						.property-type {
+							p {
+								line-height: 18px;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
 	.container-browser {
 		background: url('../img/bg-browser.png') no-repeat left top;
 		background-size: 100%;
@@ -263,7 +278,9 @@ body {
 		      			p {
 		      				font-family: 'HelveticaNeueLight';
 		      				width: auto;	
-							display: initial;
+							display: inline;
+							margin: 0 0 0 5px;
+							font-size: 1em;
 		      			}
 		      		}
 		      		.property-type {
@@ -279,8 +296,9 @@ body {
 		      			p {
 		      				font-family: 'HelveticaNeueLight';
 		      				width: auto;
-		      				font-size: 1em;	
+		      				font-size: 0.9em;	
 							display: initial;
+							margin: 0;
 		      			}
 		      		}
 		      	}
