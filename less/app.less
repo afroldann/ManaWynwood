@@ -152,7 +152,7 @@ html {
 				text-align: center;
 				img {
 					position: relative;
-					margin-top: 50%;
+					margin-top: 16%;
 					top: 0;
 				}
 			}
@@ -194,7 +194,7 @@ html {
 					font-family: 'HelveticaNeueCondensedBold', helvetica;
 					font-size: 1.7rem;
 					text-transform: uppercase;
-					text-align: left;
+					text-align: right;
 					border-bottom: 1px solid @w-gray-soft;
 					padding-bottom: 5px!important;
 					padding: 0 0 10px 0;
@@ -1025,6 +1025,9 @@ html {
 					right: auto;
 					bottom: auto;
 					text-align: center;
+					width: 285px;
+					height: 287px;
+					background: @w-black;
 				}
 
 				&.top {
@@ -1107,6 +1110,18 @@ html {
 			}
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.main-slider {
+		.rsMinW {
+			.infoBlock {
+				&.center {
+					display: none!important;
+				}
+			}
+		}
+	}
+}
 @media screen and (max-width: 1020px) {
 	html {
 		body {
@@ -1146,6 +1161,17 @@ html {
 					top: auto;
 				}
 			}
+			
+			.main-slider {
+				.rsMinW {
+					.infoBlock {
+						&.center {
+							display: none!important;
+						}
+					}
+				}
+			}
+
 			.center-content {
 				.new-content {
 					width: 50%;
