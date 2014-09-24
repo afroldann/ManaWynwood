@@ -31,9 +31,24 @@ html {
 		-webkit-transition: all .3s ease-out;
 		-moz-transition: all .3s ease-out;
 		
+		section {
+			&.row {
+				margin-top: 30px;
+				position: relative;
+			}
+		}
+
 		.wynwood {
 			.columns {
 				padding: 15px;
+			}
+			
+			.container-image {
+				padding-left: 5px;
+				img {
+					position: relative;
+					top: 42px;
+				}
 			}
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
@@ -61,10 +76,19 @@ html {
 				height: 820px;
 			}
 			.columns {
-				padding: 15px;
+				padding: 10px;
+
 				&:last-child {
 					float: left;
 				}
+				/*
+				&:nth-child(5) {
+					margin-left: -10px;
+				}
+				&:nth-child(2) {
+					margin-left: -10px;
+				}
+				*/
 			}
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
@@ -174,6 +198,11 @@ html {
 					top: 0;
 				}
 			}
+			
+			.container-image {
+				padding-right: 5px;
+			}
+
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
 				font-size: 1em;
@@ -200,6 +229,15 @@ html {
 				padding: 15px;
 				text-align: center;
 			}
+			
+			.container-image {
+				padding-left: 5px;
+				img {
+					position: relative;
+					top: 33px;
+				}
+			}
+
 			p {
 				font-family: 'HelveticaNeueLight',helvetica;
 				font-size: 1em;
