@@ -27,6 +27,9 @@ body {
 				.dark {
 					color: @w-black;
 				}
+				.red {
+					color: @w-red!important;
+				}
 				.small {
 					font-size: .7em;
 					padding-left: 315px;
@@ -50,6 +53,50 @@ body {
 
 					&.open {
 						height: 650px;
+					}
+				}
+
+				.title-plane {
+					h2 {
+						text-transform: uppercase;
+						line-height: 1;
+						font-size: 1.2em;
+					}
+				}
+
+				.plane {
+					margin: 40px 0 0 0;
+
+					.zoom {
+						display:inline-block;
+						position: relative;
+					}
+					
+					.zoom:after {
+						content:'';
+						display:block; 
+						width:33px; 
+						height:33px; 
+						position:absolute; 
+						top:0;
+						right:0;
+						background:url(icon.png);
+					}
+
+					.zoom img {
+						display: block;
+					}
+
+					.zoom img::selection { background-color: transparent; }
+
+				}
+
+				.see-all {
+					text-align: right;
+					a {
+						text-transform: uppercase;
+						font-family: 'HelveticaNeueCondensedBold', helvetica;
+						font-size: 1em;
 					}
 				}
 
@@ -90,7 +137,7 @@ body {
 						font-size: 0.9em;
 						line-height: 1.2;
 						text-align: left;
-						padding: 1em 0 0 3em;
+						padding: 0.6em 0 0 3em;
 					}
 					
 					.link-plus {
@@ -102,7 +149,15 @@ body {
 						height: 41px;
 						z-index: 99;
 					}
-
+					.data-time {
+						color: @w-red;
+						font-family: 'HelveticaNeue';
+						font-size: .7em;
+						width: 100%;
+						text-align: right;
+						display: block;
+						padding-top: 5px;
+					}
 					.gallery-link {
 						position: relative;
 						cursor: pointer;
@@ -133,9 +188,11 @@ body {
 							.box_gradient;
 							.transition;
 							
-							&:hover {
-								opacity: 0.5;
-								filter: alpha(opacity=50);
+						}
+						&:hover {
+							.overlay {
+								opacity: 0.3;
+								filter: alpha(opacity=30);
 							}
 						}
 					}
@@ -145,6 +202,30 @@ body {
 					margin-right: 48px;
 					.columns {
 						padding: 0;
+					}
+					.title-plane {
+						h2 {
+							text-transform: uppercase;
+							line-height: 0.9;
+							font-size: 2.5em;
+							margin: 0;
+						}
+					}
+					.video-plane {
+						width: 100%;
+						
+						.link-plus {
+							background-position: -10px -455px;
+						}
+
+						.gallery-container {
+							position: relative;
+							top: 120px;
+							&:first-child {
+								width: 100%;
+								margin: 0;
+							}
+						}
 					}
 					.gallery-container {
 						
@@ -156,7 +237,9 @@ body {
 						&:first-child {
 							width: 38.66667%;
 							h2 {
-
+								font-size: 1.5em;
+								width: 80%;
+								line-height: 1;
 							}
 						}
 						
@@ -164,6 +247,8 @@ body {
 							margin-left: 57px;
 							h2 {
 								font-size: 1.2em;
+								width: 80%;
+								line-height: 1;
 							}
 						}
 
@@ -171,6 +256,8 @@ body {
 							margin-left: 37px;
 							h2 {
 								font-size: 1.2em;
+								width: 80%;
+								line-height: 1;
 							}
 						}
 
@@ -194,6 +281,7 @@ body {
 						margin-top: 30px;
 						margin-bottom: 30px;
 						font-size: 2em;
+
 						span {
 							color: @w-black;
 						}

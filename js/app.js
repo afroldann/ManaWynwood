@@ -38,6 +38,8 @@ jQuery(document).ready(function($){
 
 	jQuery("#wynwood-desc").on('click', openItem );
 
+	jQuery('#plane').zoom();
+
 	jQuery(document).keyup(function(e) {
 	  	if (e.keyCode == 27) {
 			jQuery('.contact-container').slideUp();
