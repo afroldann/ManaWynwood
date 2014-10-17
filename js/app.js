@@ -97,6 +97,7 @@ jQuery(document).ready(function($){
 
 	jQuery('.close').on('click', function(){
 		jQuery('.contact-container').slideUp();
+		jQuery('header').css('z-index', '100');
 		jQuery(htmlContainer).css('overflow', 'visible');
 		jQuery('.contact-button').removeClass('active');
 	    return false;
@@ -133,6 +134,7 @@ jQuery(document).ready(function($){
 			setTimeout(function(){
 				jQuery('#contact-container').slideDown(function(){
 				jQuery(htmlContainer).css('overflow', 'hidden');
+				jQuery('header').css('z-index', '9999');
 
 			 	jQuery.ajax({
 					url:"contact.html", success:function(result){
@@ -141,7 +143,7 @@ jQuery(document).ready(function($){
 			    	});
 		    	});
 
-			},500);
+			},200);
 		});
 		return false;
 	});
