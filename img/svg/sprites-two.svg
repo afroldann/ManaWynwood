@@ -2,7 +2,7 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="62.57px" height="525.356px" viewBox="0 0 62.57 525.356" enable-background="new 0 0 62.57 525.356" xml:space="preserve">
+	 width="62.57px" height="575.178px" viewBox="0 0 62.57 575.178" enable-background="new 0 0 62.57 575.178" xml:space="preserve">
 <g id="Your_Icon_2_">
 	<polygon fill="#F4F4F4" points="13.921,25.168 31.017,42.264 32.054,41.228 15.689,24.864 49.518,24.864 49.518,23.399 
 		15.689,23.399 32.054,7.036 31.017,6 13.921,23.096 12.885,24.132 	"/>
@@ -27,8 +27,11 @@
 	<line fill="none" stroke="#C1272D" stroke-miterlimit="10" x1="21.785" y1="338.856" x2="38.785" y2="338.856"/>
 </g>
 <g>
-	<path fill="#C1272D" d="M42.735,395.834c-4.173-1.932-9.63-0.114-11.562,4.047c-1.931-4.161-7.39-5.98-11.562-4.047
-		c-4.443,2.061-6.568,7.327-3.058,13.539c2.494,4.42,6.911,7.749,14.62,13.72c7.709-5.971,12.126-9.303,14.62-13.72
+	<polyline fill="none" stroke="#C1272D" stroke-miterlimit="10" points="18.515,526.178 30.285,519.178 42.054,526.178 	"/>
+</g>
+<g>
+	<path fill="#C1272D" d="M42.735,395.834c-4.173-1.932-9.63-0.115-11.562,4.047c-1.931-4.162-7.39-5.98-11.562-4.047
+		c-4.443,2.061-6.568,7.326-3.058,13.539c2.493,4.42,6.91,7.748,14.619,13.719c7.709-5.971,12.126-9.303,14.62-13.719
 		C49.303,403.161,47.178,397.895,42.735,395.834z"/>
 </g>
 <g>

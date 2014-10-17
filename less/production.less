@@ -1,17 +1,136 @@
-@import '../css/jquery.mCustomScrollbar.css';
+@import '../css/blueimp-gallery.css';
 
 body {
 	&.production {
 		height:100%;
 		background: url('../img/bg-production.jpg') repeat-y center top;
-
-		.main-content {
+		
+		footer {
+			margin-top: 50px;
+		}
+		.blueimp-gallery-carousel {
+			margin: 0 auto;
+		}
+		.main-content {	
 
 			height: 100%;
 			width: 100%;
 			position: absolute;
 			top: 0;
 			
+	        .galleries-container {
+	        	position: fixed;
+	        	left: 0;
+	        	right: 0;
+	        	top: 0;
+	        	bottom: 0;
+	        	height: 100%;
+	        	z-index: 999;
+	        	background: @w-white;
+	        	
+	        	.gallery-center {
+	        		width: 1024px;
+	        		position: relative;
+	        		margin: 0 auto;
+
+	        		h2 {
+						font-family: 'HelveticaNeueCondensedBold',helvetica;
+						font-size: 1.7em;
+						line-height: 0.9;
+	        		}
+
+			        .slider-list-gallery {
+			            position: relative; 
+			            width: 100%; 
+			            height: 510px;
+				        
+						.container-gallery {
+				            cursor: move; 
+				            left: 0px; 
+				            top: 0px; 
+				            width: 100%; 
+				            height: 510px; 
+				            overflow: hidden;
+				            .columns {
+				            	margin: 0;
+				            	padding: 0;
+				            }
+				            ul {
+				            	margin: 0;
+				            	padding: 0;
+				            	li {
+				            		margin: 17px;
+				            		padding: 0;
+				            		list-style: none;
+				            		float: left;
+				            	}
+				            }
+				        }
+
+				        .bullets {
+				            position: absolute; 
+				            bottom: 16px; 
+				            right: 6px;
+				            .transition;
+			            	.av {
+			            		.n {
+			            			background: @w-red;
+			            		}
+			            	}
+				            span {
+				            	cursor: pointer;
+				            	&.n {
+				            		background: @w-gray-field;
+									text-indent: -9999px;
+									border-radius: 50%;
+									position: absolute;
+									left: 0;
+									top: 0;
+									width: 12px;
+									height: 12px;
+				            		
+				            		.transition;
+									
+									&:hover {
+				            			background: @w-red;
+									}
+				            	}
+				            }
+				        }
+
+				        .loading {
+				            position: absolute; 
+				            top: 0px; 
+				            left: 0px;
+
+					        .loader {
+					            position: absolute; 
+					            display: block; 
+					            background: url(../img/loading.gif) no-repeat center center;
+					            top: 0px; 
+					            left: 0px; 
+					            width: 100%; 
+					            height: 100%;
+					        }
+					        
+					        .loader-filter {
+					            filter: alpha(opacity=70); 
+					            opacity: 0.7; 
+					            position: absolute; 
+					            display: block;
+					            background-color: #000000; 
+					            top: 0px; 
+					            left: 0px; 
+					            width: 100%; 
+					            height: 100%;
+					        }
+				        }
+				        
+			        }
+	        	}
+	        }
+
+
 			.production-village {
 				h2 {
 					font-family: 'HelveticaNeueCondensedBold', helvetica;
@@ -37,6 +156,7 @@ body {
 				.red {
 					color: @w-red;
 				}
+				
 				p {
 					color: @w-gray-text;
 					font-size: 1em;
@@ -44,15 +164,36 @@ body {
 					line-height: 1.3;
 					font-family: 'HelveticaNeueLight';
 				}
+
 				.wynwood-desc {
-					height: 200px;
+					height: 220px;
 					overflow: hidden;
-					margin-bottom: 90px;
+					margin-bottom: 55px;
+					position: relative;
+					padding-bottom: 0px;
 
 					.transition;
 
 					&.open {
 						height: 650px;
+						a {
+							&.link-plus {
+								background-position: -12px -510px;
+								bottom: -20px;
+							}
+						}
+					}
+
+					a {
+						&.link-plus {
+							background: url('../img/svg/sprites-two.svg') no-repeat -12px -318px @w-white;;
+							position: absolute;
+							right: -10px;
+							bottom: -10px;
+							width: 40px;
+							height: 41px;
+							z-index: 99;
+						}
 					}
 				}
 
@@ -286,49 +427,6 @@ body {
 							color: @w-black;
 						}
 					}
-				}
-			}
-
-			.mCustomScrollbar {
-				height: 100%;
-				padding-top: 0;
-				.mCSB_container {
-					height: 100%;
-					min-width: 5100px;
-					section {
-						height: 100%;
-						float: left;
-
-						article {
-							height: 100%;
-							float: left!important;
-							.container-middle-image {
-								height: 50%;
-								overflow: hidden;
-								img {
-									max-width: none;
-									width: auto;
-									height: 50%;
-								}
-							}
-							.columns {
-								&:last-child {
-									float: left;
-								}
-							}
-							.container-image {
-								height: 100%;
-								overflow: hidden;
-								img {
-									max-width: none;
-									width: auto;
-									height: 100%;
-								}
-							}
-						}
-					}
-				}
-				.mCSB_scrollTools {
 				}
 			}
 		}		

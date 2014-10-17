@@ -27,7 +27,7 @@ var navegador = navigator.userAgent;
 $(document).foundation();
 
 jQuery(document).ready(function($){
-	
+
 	if (navigator.userAgent.indexOf('MSIE') !=-1) {
 		jQuery('body').addClass('explorer');		
 	}
@@ -37,7 +37,6 @@ jQuery(document).ready(function($){
 	}
 
 	jQuery("#wynwood-desc").on('click', openItem );
-
 	jQuery('#plane').zoom();
 
 	jQuery(document).keyup(function(e) {
