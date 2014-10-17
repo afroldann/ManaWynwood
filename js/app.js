@@ -38,6 +38,17 @@ jQuery(document).ready(function($){
 
 	jQuery("#wynwood-desc").on('click', openItem );
 	jQuery('#plane').zoom();
+	
+	jQuery("#gallery-slider").on('click', function(){
+		jQuery(htmlContainer).animate({scrollTop:0}, 'linear', function() { 
+			setTimeout(function(){
+				jQuery("#gallery").addClass("openGallery");
+				jQuery('html').css('overflow', 'hidden');
+			},200);
+		});
+
+	});
+
 
 	jQuery(document).keyup(function(e) {
 	  	if (e.keyCode == 27) {
