@@ -34,21 +34,27 @@ jQuery(document).ready(function($){
 	
 	function openItem(){
 		jQuery(this).toggleClass('open');
+		return false;
 	}
 
 	jQuery("#wynwood-desc").on('click', openItem );
 	jQuery('#plane').zoom();
 	
 	jQuery("#gallery-slider").on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:0}, 'linear', function() { 
+		jQuery(htmlContainer).animate({scrollTop:0}, 'ease', function() { 
 			setTimeout(function(){
 				jQuery("#gallery").addClass("openGallery");
 				jQuery('html').css('overflow', 'hidden');
-			},200);
+			});
 		});
-
 	});
 
+	jQuery(".close-g").on('click', function(){
+		setTimeout(function(){
+			jQuery("#gallery").removeClass("openGallery");
+			jQuery('html').css('overflow', 'auto');
+		},200);
+	});
 
 	jQuery(document).keyup(function(e) {
 	  	if (e.keyCode == 27) {
