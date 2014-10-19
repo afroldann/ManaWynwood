@@ -41,19 +41,33 @@ jQuery(document).ready(function($){
 	jQuery('#plane').zoom();
 	
 	jQuery("#gallery-slider").on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:0}, 'ease', function() { 
-			setTimeout(function(){
-				jQuery("#gallery").addClass("openGallery");
-				jQuery('html').css('overflow', 'hidden');
-			});
+		setTimeout(function(){
+			jQuery("#gallery").addClass("openGallery");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
+	});
+
+	jQuery(window).scroll(function() {
+	   if(jQuery(window).scrollTop() == 0) {
+	  		jQuery( "header" ).removeClass( "scrolled" );
+	   }else {
+	  		jQuery( "header" ).addClass( "scrolled" );
+	   }
 	});
 
 	jQuery(".close-g").on('click', function(){
 		setTimeout(function(){
 			jQuery("#gallery").removeClass("openGallery");
 			jQuery('html').css('overflow', 'auto');
+  			jQuery( "header" ).addClass( "scrolled" );
+
+			if(jQuery(window).scrollTop() == 0) {
+	  			jQuery( "header" ).removeClass( "scrolled" );
+			}
+
 		},200);
+		return false;
 	});
 
 	jQuery(document).keyup(function(e) {
@@ -316,13 +330,6 @@ jQuery(document).ready(function($){
 		});
 
 	}else if(windowWidth <= 768 ) {
-		jQuery('header').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'height',
-			before: 87,
-			after: 87
-		});
 
 		jQuery('.logo img').scrollAnimate({
 			startScroll: 1,
@@ -424,15 +431,6 @@ jQuery(document).ready(function($){
 	}else {
 
 
-		jQuery('header').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'height',
-			before: 153,
-			after: 87
-		});
-	
-
 		jQuery('body').scrollAnimate({
 			startScroll: 1,
 			endScroll: 1,
@@ -441,14 +439,6 @@ jQuery(document).ready(function($){
 			after: 160
 		});
 
-		jQuery('.social').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'margin-bottom',
-			before: 65,
-			after: 10
-		});
-		
 		jQuery('.backToTop').scrollAnimate({
 			startScroll: heightHighlights,
 			endScroll: heightHighlights + heightDetails + heightDescription,
@@ -575,14 +565,6 @@ jQuery(document).ready(function($){
 			cssProperty: 'margin-left',
 			before: '10%',
 			after: 10
-		});
-
-		jQuery('.logo img').scrollAnimate({
-			startScroll: 1,
-			endScroll: 1,
-			cssProperty: 'width',
-			before: 113,
-			after: 60
 		});
 
 		jQuery('.logo h1').scrollAnimate({
