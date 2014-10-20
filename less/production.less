@@ -254,9 +254,50 @@ body {
 		        	opacity: 0;
 		        	filter: alpha(opacity=00);
 		        	
+		        	.center-events {
+		        		position: relative;
+		        		top: 50%;
+		        		margin-top: -330px;
+		        	}
+
 		        	.title-events {
 		        		width: 1024px;
 		        		margin: 0 auto;
+		        		position: relative;
+			        	
+			        	.close-g {
+							background: url('../img/svg/sprites-two.svg') no-repeat -15px -574px;
+							position: absolute;
+							right: 0;
+							top: 0;
+							width: 30px;
+							height: 30px;
+							z-index: 999;
+							text-indent: -9999px;
+
+						    &:hover {
+
+							    -webkit-animation-name: rotate; 
+							    -webkit-animation-duration: 0.5s; 
+							    -webkit-transition-timing-function: linear;	
+
+							    -moz-animation-name: rotate; 
+							    -moz-animation-duration: 0.5s; 
+							    -moz-transition-timing-function: linear;
+
+							    -o-animation-name: rotate; 
+							    -o-animation-duration: 0.5s; 
+							    -o-transition-timing-function: linear;	
+							    
+							    animation-name: rotate; 
+							    animation-duration: 0.5s; 
+							    transition-timing-function: linear;			    	
+						    }
+						}
+
+		        		h2 {
+		        			margin:10px 0px 20px 0px;
+		        		}
 		        	}
 
 		        	.rsDefault, 
@@ -272,6 +313,53 @@ body {
 					  	width: 1024px;
 					  	margin: 0 auto;
 				  		background: none;
+				  		height: 400px!important;
+				  		
+				  		&.rsDefault {
+				  			.rsArrow {
+				  				height: auto;
+				  				position: relative;
+				  				
+				  				&.rsArrowRight {
+				  					right: -46px;
+				  					.rsArrowIcn {
+				  						background-position: -45px 0px;
+				  					}
+				  				}
+
+				  				.rsArrowIcn {
+				  					width: 45px;
+				  					height: 20px;
+				  					background: url('../img/next-prev.png') no-repeat @w-white;
+
+				  				}
+				  			}
+					  		.rsNav {
+					  			&.rsBullets {
+									background: transparent;
+									position: relative;
+									padding-bottom: 5px;
+									width: 597px;
+									float: right;
+
+					  				.rsNavItem {
+					  					margin: 5px;
+					  					float: left;
+					  					span {
+					  						width: 12px;
+					  						height: 12px;
+					  						background: @w-gray-field;					  						
+					  					}
+					  					&.rsNavSelected {
+					  						span {
+					  							background: @w-red;					  							
+					  						}
+					  					}
+					  				}
+					  			}
+					  		}
+				  		}
+
 						.rsContent {
 							background: none;
 							

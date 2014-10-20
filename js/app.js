@@ -69,7 +69,7 @@ jQuery(document).ready(function($){
         keyboardNavEnabled: true,
         autoHeight: true,
         autoScaleSlider: true,
-        autoScaleSliderHeight: 500,
+        arrowsNavAutoHide: false,
         arrowsNav: true,
         loop: true
     });  
