@@ -65,7 +65,7 @@ jQuery(document).ready(function($){
 	   }
 	});
 	
-	jQuery(".royalSlider").royalSlider({
+	jQuery(".slider-events-production").royalSlider({
         keyboardNavEnabled: true,
         autoHeight: true,
         autoScaleSlider: true,
