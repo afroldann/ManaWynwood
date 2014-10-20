@@ -46,6 +46,15 @@ jQuery(document).ready(function($){
 			jQuery('html').css('overflow', 'hidden');
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
+	});	
+
+	jQuery(".open-villale-events").on('click', function(){
+		setTimeout(function(){
+			jQuery("#village-events").addClass("openEvents");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
+		return false;
 	});
 
 	jQuery(window).scroll(function() {
@@ -55,9 +64,20 @@ jQuery(document).ready(function($){
 	  		jQuery( "header" ).addClass( "scrolled" );
 	   }
 	});
+	
+	jQuery(".royalSlider").royalSlider({
+        keyboardNavEnabled: true,
+        autoHeight: true,
+        autoScaleSlider: true,
+        autoScaleSliderHeight: 500,
+        arrowsNav: true,
+        loop: true
+    });  
+
 
 	jQuery(".close-g").on('click', function(){
 		setTimeout(function(){
+			jQuery("#village-events").removeClass("openEvents");
 			jQuery("#gallery").removeClass("openGallery");
 			jQuery('html').css('overflow', 'auto');
   			jQuery( "header" ).addClass( "scrolled" );

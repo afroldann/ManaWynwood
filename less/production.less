@@ -240,6 +240,74 @@ body {
 					font-family: 'HelveticaNeueLight';
 				}
 
+				.village-events {
+					position: fixed;
+		        	left: 0;
+		        	right: 0;
+		        	top: 150px;
+		        	bottom: 0;
+		        	height: 100%;
+		        	z-index: 999;
+		        	background: @w-white;
+		        	visibility: hidden;
+		        	
+		        	opacity: 0;
+		        	filter: alpha(opacity=00);
+		        	
+		        	.title-events {
+		        		width: 1024px;
+		        		margin: 0 auto;
+		        	}
+
+		        	.rsDefault, 
+		        	.rsDefault .rsOverflow, 
+		        	.rsDefault .rsSlide, 
+		        	.rsDefault .rsVideoFrameHolder, 
+		        	.rsDefault .rsThumbs {
+		        		background: none;
+		        	}
+
+		        	.royalSlider {
+		        		display: none;
+					  	width: 1024px;
+					  	margin: 0 auto;
+				  		background: none;
+						.rsContent {
+							background: none;
+							
+							.content-event {
+								margin-left: 50px;
+								
+								.data-event {
+									font-style: italic;
+									color: @w-black;
+									font-size: .8em;
+									margin-bottom: 20px;
+									position: relative;
+									display: block;
+								}
+
+								h3 {
+									font-family: 'HelveticaNeueCondensedBold', helvetica;
+									font-size: 1.4em;
+									line-height: 1;
+									color: @w-black;
+								}
+							}
+						}
+		        	}
+
+					&.openEvents {
+		        		visibility: visible;
+		        		opacity: 1;
+		        		filter: alpha(opacity=100);
+	
+						.royalSlider {
+						  display: block;
+						}
+					}
+				}
+					
 				.wynwood-desc {
 					height: 220px;
 					overflow: hidden;
