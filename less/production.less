@@ -24,9 +24,9 @@ body {
 				position: absolute;
 				width: 310px;
 				left: 50%;
-				margin-left: 209px;
+				margin-left: 265px;
 				top: 50%;
-				margin-top: -340px;
+				margin-top: 138px;
 
 				.facebook-button {
 
@@ -59,9 +59,9 @@ body {
 					width: 30px;
 					height: 30px;
 					text-indent: -9999px;
-					margin-right: -505px;
+					margin-right: -555px;
 					z-index: 999;
-					margin-top: -345px;
+					margin-top: -339px;
 
 				    &:hover {
 
@@ -101,10 +101,14 @@ body {
 
 	        		h2 {
 						font-family: 'HelveticaNeueCondensedBold',helvetica;
-						font-size: 1.4em;
+						font-size: 1.7em;
 						line-height: .9;
 						text-transform: uppercase;
 						top: -25px;
+						position: absolute;
+						right: 0;
+						z-index: 99;
+						background: @w-white;
 	        		}
 
 			        .slider-list-gallery {
@@ -119,6 +123,11 @@ body {
 				            width: 100%; 
 				            height: 510px; 
 				            overflow: hidden;
+				            
+				            .gallery-list {
+				            	min-width: 1024
+				            }
+
 				            .columns {
 				            	margin: 0;
 				            	padding: 0;
@@ -320,10 +329,15 @@ body {
 				  				height: auto;
 				  				position: relative;
 				  				
+				  				&.rsArrowLeft {
+				  					.rsArrowIcn {
+				  						background-position: -45px 0px;
+				  					}
+				  				}
+
 				  				&.rsArrowRight {
 				  					right: -46px;
 				  					.rsArrowIcn {
-				  						background-position: -45px 0px;
 				  					}
 				  				}
 				  				.rsArrowIcn {
@@ -343,12 +357,18 @@ body {
 									float: right;
 
 					  				.rsNavItem {
+				  						cursor: pointer;
 					  					margin: 5px;
 					  					float: left;
 					  					span {
 					  						width: 12px;
 					  						height: 12px;
-					  						background: @w-gray-field;					  						
+					  						background: @w-gray-field;	
+					  						.transition;
+					  						
+					  						&:hover {
+					  							background: @w-red;					  							
+					  						}				  						
 					  					}
 					  					&.rsNavSelected {
 					  						span {

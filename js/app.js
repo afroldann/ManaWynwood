@@ -65,14 +65,28 @@ jQuery(document).ready(function($){
 	   }
 	});
 	
-	jQuery(".slider-events-production").royalSlider({
+	var sliderEvents = jQuery(".slider-events-production").royalSlider({
         keyboardNavEnabled: true,
         autoHeight: true,
         autoScaleSlider: true,
         arrowsNavAutoHide: false,
         arrowsNav: true,
-        loop: true
-    });  
+        loop: false,
+        transitionType: 'fade'
+
+    }).data('royalSlider');
+
+    jQuery('.three').on('click', function(){
+    	sliderEvents.goTo(2);
+    });    
+
+    jQuery('.two').on('click', function(){
+    	sliderEvents.goTo(1);
+    });
+	
+	jQuery('.one').on('click', function(){
+    	sliderEvents.goTo(0);
+    });
 
 
 	jQuery(".close-g").on('click', function(){
