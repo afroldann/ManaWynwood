@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
 		return false;
 	}
 
-	jQuery("#wynwood-desc").on('click', openItem );
+	jQuery("#wynwood-desc,#basel-desc").on('click', openItem );
 	jQuery('#plane').zoom();
 	
 	jQuery("#gallery-slider").on('click', function(){
