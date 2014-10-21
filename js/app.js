@@ -55,6 +55,15 @@ jQuery(document).ready(function($){
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
 		return false;
+	});	
+
+	jQuery(".gallery-container").on('click', function(){
+		setTimeout(function(){
+			jQuery(".container-video").addClass("openVideo");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
+		return false;
 	});
 
 	jQuery(window).scroll(function() {
@@ -72,7 +81,12 @@ jQuery(document).ready(function($){
         arrowsNavAutoHide: false,
         arrowsNav: true,
         loop: false,
-        transitionType: 'fade'
+        transitionType: 'fade',
+        autoPlay: {
+    		enabled: true,
+    		pauseOnHover: false,
+    		stopAtAction: false
+    	}
 
     }).data('royalSlider');
 
@@ -93,6 +107,8 @@ jQuery(document).ready(function($){
 		setTimeout(function(){
 			jQuery("#village-events").removeClass("openEvents");
 			jQuery("#gallery").removeClass("openGallery");
+			jQuery("#gallery").removeClass("openGallery");
+			jQuery(".container-video").removeClass("openVideo");
 			jQuery('html').css('overflow', 'auto');
   			jQuery( "header" ).addClass( "scrolled" );
 
