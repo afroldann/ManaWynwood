@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
 		return false;
 	});	
 
-	jQuery(".gallery-container").on('click', function(){
+	jQuery(".video-plane").on('click', function(){
 		setTimeout(function(){
 			jQuery(".container-video").addClass("openVideo");
 			jQuery('html').css('overflow', 'hidden');
