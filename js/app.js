@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
 		return false;
 	}
 
-	jQuery("#wynwood-desc").on('click', openItem );
+	jQuery("#wynwood-desc,#basel-desc").on('click', openItem );
 	jQuery('#plane').zoom();
 	
 	jQuery("#gallery-slider").on('click', function(){
@@ -55,6 +55,15 @@ jQuery(document).ready(function($){
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
 		return false;
+	});	
+
+	jQuery(".video-plane").on('click', function(){
+		setTimeout(function(){
+			jQuery(".container-video").addClass("openVideo");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
+		return false;
 	});
 
 	jQuery(window).scroll(function() {
@@ -65,20 +74,41 @@ jQuery(document).ready(function($){
 	   }
 	});
 	
-	jQuery(".slider-events-production").royalSlider({
+	var sliderEvents = jQuery(".slider-events-production").royalSlider({
         keyboardNavEnabled: true,
         autoHeight: true,
         autoScaleSlider: true,
         arrowsNavAutoHide: false,
         arrowsNav: true,
-        loop: true
-    });  
+        loop: false,
+        transitionType: 'fade',
+        autoPlay: {
+    		enabled: true,
+    		pauseOnHover: false,
+    		stopAtAction: false
+    	}
+
+    }).data('royalSlider');
+
+    jQuery('.three').on('click', function(){
+    	sliderEvents.goTo(2);
+    });    
+
+    jQuery('.two').on('click', function(){
+    	sliderEvents.goTo(1);
+    });
+	
+	jQuery('.one').on('click', function(){
+    	sliderEvents.goTo(0);
+    });
 
 
 	jQuery(".close-g").on('click', function(){
 		setTimeout(function(){
 			jQuery("#village-events").removeClass("openEvents");
 			jQuery("#gallery").removeClass("openGallery");
+			jQuery("#gallery").removeClass("openGallery");
+			jQuery(".container-video").removeClass("openVideo");
 			jQuery('html').css('overflow', 'auto');
   			jQuery( "header" ).addClass( "scrolled" );
 
