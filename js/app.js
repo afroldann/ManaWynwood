@@ -40,6 +40,16 @@ jQuery(document).ready(function($){
 	jQuery(".modal-basel").attr('rel', 'gallery-basel').fancybox({
 		arrows: true,
 		nextClick: true
+	});	
+
+	jQuery(".modal-walk").attr('rel', 'gallery-basel').fancybox({
+		arrows: true,
+		nextClick: true
+	});	
+
+	jQuery(".cola-walk").attr('rel', 'gallery-basel').fancybox({
+		arrows: true,
+		nextClick: true
 	});
 	
 	jQuery(".modal-video").attr('rel', 'gallery-video').fancybox({
@@ -57,9 +67,11 @@ jQuery(document).ready(function($){
 		return false;
 	}
 
-	jQuery("#wynwood-desc,#basel-desc,#cola-desc").on('click', openItem );
+	jQuery(".desc").on('click', openItem );
+
 	jQuery('#plane').zoom();
 	jQuery('#plane-rc').zoom();
+	jQuery('#plane-walk').zoom();
 	
 	jQuery("#gallery-slider").on('click', function(){
 		setTimeout(function(){
@@ -83,6 +95,14 @@ jQuery(document).ready(function($){
 			jQuery('html').css('overflow', 'hidden');
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
+	});		
+
+	jQuery(".open-walk-gallery").on('click', function(){
+		setTimeout(function(){
+			jQuery("#gallery-walk-container").addClass("openGallery");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
 	});	
 
 	jQuery(".open-villale-events").on('click', function(){
@@ -101,11 +121,29 @@ jQuery(document).ready(function($){
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
 		return false;
+	});		
+
+	jQuery(".container-lots a").on('click', function(){
+		setTimeout(function(){
+			jQuery("#walk-plants").addClass("openEvents");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
+		return false;
 	});	
 
 	jQuery(".open-cola-events").on('click', function(){
 		setTimeout(function(){
 			jQuery("#cola-events").addClass("openEvents");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
+		return false;
+	});	
+
+	jQuery(".open-walk-events").on('click', function(){
+		setTimeout(function(){
+			jQuery("#walk-events").addClass("openEvents");
 			jQuery('html').css('overflow', 'hidden');
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
@@ -149,11 +187,39 @@ jQuery(document).ready(function($){
     	sliderEvents.goTo(0);
     });
 
+	var sliderPlants = jQuery(".slider-plants-production").royalSlider({
+        keyboardNavEnabled: true,
+        autoHeight: true,
+        autoScaleSlider: true,
+        arrowsNavAutoHide: false,
+        arrowsNav: true,
+        loop: false,
+        autoPlay: {
+    		enabled: true,
+    		pauseOnHover: false,
+    		stopAtAction: false,
+    		delay: 8000
+    	}
+
+    }).data('royalSlider');
+
+    jQuery('.three').on('click', function(){
+    	sliderPlants.goTo(2);
+    });    
+
+    jQuery('.two').on('click', function(){
+    	sliderPlants.goTo(1);
+    });
+	
+	jQuery('.one').on('click', function(){
+    	sliderPlants.goTo(0);
+    });
+
 
 	jQuery(".close-g").on('click', function(){
 		setTimeout(function(){
-			jQuery("#village-events,#basel-events,#cola-events").removeClass("openEvents");
-			jQuery("#gallery-basel-container,#gallery-rc-container,#gallery").removeClass("openGallery");
+			jQuery("#village-events,#basel-events,#cola-events,#walk-events,#walk-plants").removeClass("openEvents");
+			jQuery("#gallery-basel-container,#gallery-rc-container,#gallery,#gallery-walk-container").removeClass("openGallery");
 			jQuery(".container-video").removeClass("openVideo");
 			jQuery('html').css('overflow', 'auto');
   			jQuery( "header" ).addClass( "scrolled" );
