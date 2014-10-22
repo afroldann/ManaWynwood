@@ -44,7 +44,8 @@ jQuery(document).ready(function($){
 	
 	jQuery(".modal-video").attr('rel', 'gallery-video').fancybox({
 		openEffect  : 'fade',
-		closeEffect : 'fade'
+		closeEffect : 'fade',
+		arrows: false
 	});
 
 	if (navigator.userAgent.indexOf('MSIE') !=-1) {
@@ -91,6 +92,24 @@ jQuery(document).ready(function($){
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
 		return false;
+	});		
+
+	jQuery(".open-basel-events").on('click', function(){
+		setTimeout(function(){
+			jQuery("#basel-events").addClass("openEvents");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
+		return false;
+	});	
+
+	jQuery(".open-cola-events").on('click', function(){
+		setTimeout(function(){
+			jQuery("#cola-events").addClass("openEvents");
+			jQuery('html').css('overflow', 'hidden');
+	  		jQuery( "header" ).removeClass( "scrolled" );
+		});
+		return false;
 	});	
 
 	jQuery(window).scroll(function() {
@@ -112,7 +131,8 @@ jQuery(document).ready(function($){
         autoPlay: {
     		enabled: true,
     		pauseOnHover: false,
-    		stopAtAction: false
+    		stopAtAction: false,
+    		delay: 8000
     	}
 
     }).data('royalSlider');
@@ -132,7 +152,7 @@ jQuery(document).ready(function($){
 
 	jQuery(".close-g").on('click', function(){
 		setTimeout(function(){
-			jQuery("#village-events").removeClass("openEvents");
+			jQuery("#village-events,#basel-events,#cola-events").removeClass("openEvents");
 			jQuery("#gallery-basel-container,#gallery-rc-container,#gallery").removeClass("openGallery");
 			jQuery(".container-video").removeClass("openVideo");
 			jQuery('html').css('overflow', 'auto');
