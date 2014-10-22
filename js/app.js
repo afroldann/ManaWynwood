@@ -25,13 +25,10 @@ var isMobile = {
 var navegador = navigator.userAgent;
 
 $(document).foundation();
-jQuery(document).ready(function($){
-	
-	jQuery('.plan-detail').zoom();
 
-	/* var artBasel = $( ".art-basel" );
-	var offset = artBasel.offset();
-	artBasel.html( offset.top ); */
+jQuery(document).ready(function($){
+
+	jQuery('.plan-detail').zoom();
 
 	jQuery(".modal-village").attr('rel', 'gallery-village').fancybox({
 		arrows: true,
