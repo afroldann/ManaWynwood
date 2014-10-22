@@ -25,9 +25,10 @@ var isMobile = {
 var navegador = navigator.userAgent;
 
 $(document).foundation();
-
 jQuery(document).ready(function($){
 	
+	jQuery('.plan-detail').zoom();
+
 	/* var artBasel = $( ".art-basel" );
 	var offset = artBasel.offset();
 	artBasel.html( offset.top ); */
@@ -68,14 +69,12 @@ jQuery(document).ready(function($){
 	}
 
 	jQuery(".desc").on('click', openItem );
-
-	jQuery('.plan-detail').zoom();
 	
 	jQuery("#gallery-slider").on('click', function(){
 		setTimeout(function(){
+	  		jQuery( "header" ).removeClass( "scrolled" );
 			jQuery("#gallery").addClass("openGallery");
 			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
 	});	
 
@@ -165,7 +164,7 @@ jQuery(document).ready(function($){
         loop: false,
         transitionType: 'fade',
         autoPlay: {
-    		enabled: true,
+    		enabled: false,
     		pauseOnHover: false,
     		stopAtAction: false,
     		delay: 8000
