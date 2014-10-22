@@ -69,9 +69,7 @@ jQuery(document).ready(function($){
 
 	jQuery(".desc").on('click', openItem );
 
-	jQuery('#plane').zoom();
-	jQuery('#plane-rc').zoom();
-	jQuery('#plane-walk').zoom();
+	jQuery('.plan-detail').zoom();
 	
 	jQuery("#gallery-slider").on('click', function(){
 		setTimeout(function(){
@@ -746,7 +744,7 @@ jQuery(document).ready(function($){
 			endScroll: 1,
 			cssProperty: 'top',
 			before: 93,
-			after: 22
+			after: 40
 		});	
 
 	}
