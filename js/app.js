@@ -595,6 +595,14 @@ jQuery(document).ready(function($){
 			after: 160
 		});
 
+		jQuery('body.production').scrollAnimate({
+			startScroll: 1,
+			endScroll: 1,
+			cssProperty: 'margin-top',
+			before: 225,
+			after: 160
+		});
+
 		jQuery('.backToTop').scrollAnimate({
 			startScroll: heightHighlights,
 			endScroll: heightHighlights + heightDetails + heightDescription,
