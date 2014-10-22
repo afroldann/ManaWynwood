@@ -733,7 +733,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'font-size',
-			before: '1.6rem',
+			before: '1.9rem',
 			after: '1.2rem'
 		}).scrollAnimate({
 			startScroll: 1,
@@ -745,7 +745,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'top',
-			before: 61,
+			before: 93,
 			after: 22
 		});	
 
