@@ -616,7 +616,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'margin-top',
-			before: 225,
+			before: 173,
 			after: 160
 		});
 
