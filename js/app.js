@@ -27,6 +27,31 @@ var navegador = navigator.userAgent;
 $(document).foundation();
 
 jQuery(document).ready(function($){
+	
+	var village = $( "#production-village" ).offset();
+	var basel = $( "#art-basel" ).offset();
+	var cola = $( "#rc-cola" ).offset();
+	var walk = $( "#art-walk" ).offset();
+	
+	jQuery('#production-village-btn').on('click', function(){
+		jQuery(htmlContainer).animate({scrollTop:village.top}, 'linear');
+		return false;
+	});	
+
+	jQuery('#art-basel-btn').on('click', function(){
+		jQuery(htmlContainer).animate({scrollTop:basel.top + 400}, 'linear');
+		return false;
+	});
+
+	jQuery('#rc-cola-btn').on('click', function(){
+		jQuery(htmlContainer).animate({scrollTop:cola.top + 750}, 'linear');
+		return false;
+	});
+
+	jQuery('#art-walk-btn').on('click', function(){
+		jQuery(htmlContainer).animate({scrollTop:walk.top + 1600}, 'linear');
+		return false;
+	});
 
 	jQuery('.plan-detail').zoom();
 
@@ -591,7 +616,7 @@ jQuery(document).ready(function($){
 			startScroll: 1,
 			endScroll: 1,
 			cssProperty: 'margin-top',
-			before: 173,
+			before: 225,
 			after: 160
 		});
 
