@@ -26,32 +26,31 @@ var navegador = navigator.userAgent;
 
 $(document).foundation();
 
-jQuery(document).ready(function($){
-	
+function menuProduction(){
 	var village = $( "#production-village" ).offset();
 	var basel = $( "#art-basel" ).offset();
 	var cola = $( "#rc-cola" ).offset();
 	var walk = $( "#art-walk" ).offset();
-	
+
 	jQuery('#production-village-btn').on('click', function(){
 		jQuery(htmlContainer).animate({scrollTop:village.top}, 'linear');
-		return false;
 	});	
 
 	jQuery('#art-basel-btn').on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:basel.top + 400}, 'linear');
-		return false;
+		$("html, body").animate({ scrollTop: $('#art-basel').offset().top - 200 }, 1000);
 	});
 
 	jQuery('#rc-cola-btn').on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:cola.top + 750}, 'linear');
-		return false;
+		jQuery(htmlContainer).animate({scrollTop:cola.top}, 'linear');
 	});
 
 	jQuery('#art-walk-btn').on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:walk.top + 1600}, 'linear');
-		return false;
+		jQuery(htmlContainer).animate({scrollTop:walk.top}, 'linear');
 	});
+}
+
+jQuery(document).ready(function($){
+	menuProduction();
 
 	jQuery('.plan-detail').zoom();
 
@@ -610,7 +609,6 @@ jQuery(document).ready(function($){
 
 
 	}else {
-
 
 		jQuery('body').scrollAnimate({
 			startScroll: 1,
