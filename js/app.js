@@ -33,7 +33,7 @@ function menuProduction(){
 	var walk = $( "#art-walk" ).offset();
 
 	jQuery('#production-village-btn').on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:village.top}, 'linear');
+		jQuery(htmlContainer).animate({scrollTop:village.top}, 1000);
 	});	
 
 	jQuery('#art-basel-btn').on('click', function(){
@@ -41,11 +41,11 @@ function menuProduction(){
 	});
 
 	jQuery('#rc-cola-btn').on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:cola.top}, 'linear');
+		jQuery(htmlContainer).animate({scrollTop:cola.top}, 1000);
 	});
 
 	jQuery('#art-walk-btn').on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:walk.top}, 'linear');
+		jQuery(htmlContainer).animate({scrollTop:walk.top}, 1000);
 	});
 }
 
