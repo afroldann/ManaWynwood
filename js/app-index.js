@@ -46,26 +46,31 @@ jQuery(document).ready(function($){
 			$(logo).fadeOut(550, function(){
 				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
 			});
+			$('.logo h1').show();
 		}
 		if(currSliderNum === 1 ){
 			$(logo).fadeOut(550, function(){
 				$(this).attr('src','img/svg/logo-properties.svg').fadeIn(550);
-			});	
+			});
+			$('.logo h1').hide();
 		}
 		if(currSliderNum === 2 ){
 			$(logo).fadeOut(550, function(){
 				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
 			});
+			$('.logo h1').hide();
 		}
 		if(currSliderNum === 3 ){
 			$(logo).fadeOut(550, function(){
 				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
 			});
+			$('.logo h1').hide();
 		}		
 		if(currSliderNum === 4 ){
 			$(logo).fadeOut(550, function(){
 				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
 			});
+			$('.logo h1').hide();
 		}
 		
 	});
