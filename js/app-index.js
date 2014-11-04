@@ -59,7 +59,7 @@ jQuery(document).ready(function($){
 		}
 		if(currSliderNum === 3 ){
 			$(logo).fadeOut(550, function(){
-				$(this).attr('src','img/svg/logo-art.svg').fadeIn(550);
+				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
 			});
 		}		
 		if(currSliderNum === 4 ){
