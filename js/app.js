@@ -91,36 +91,40 @@ jQuery(document).ready(function($){
 
 	jQuery(".desc").on('click', openItem );
 	
-	jQuery("#gallery-slider").on('click', function(){
+	jQuery("#gallery-slider,#gallery-slider a.link-plus").on('click', function(){
 		setTimeout(function(){
 	  		jQuery( "header" ).removeClass( "scrolled" );
 			jQuery("#gallery").addClass("openGallery");
 			jQuery('html').css('overflow', 'hidden');
 		});
+		return false;
 	});	
 
-	jQuery("#gallery-basel").on('click', function(){
+	jQuery("#gallery-basel, #gallery-basel .link-plus").on('click', function(){
 		setTimeout(function(){
 			jQuery("#gallery-basel-container").addClass("openGallery");
 			jQuery('html').css('overflow', 'hidden');
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
+		return false;
 	});		
 
-	jQuery("#gallery-rc").on('click', function(){
+	jQuery("#gallery-rc,#gallery-rc .link-plus").on('click', function(){
 		setTimeout(function(){
 			jQuery("#gallery-rc-container").addClass("openGallery");
 			jQuery('html').css('overflow', 'hidden');
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
+		return false;
 	});		
 
-	jQuery(".open-walk-gallery").on('click', function(){
+	jQuery(".open-walk-gallery, .open-walk-gallery .link-plus").on('click', function(){
 		setTimeout(function(){
 			jQuery("#gallery-walk-container").addClass("openGallery");
 			jQuery('html').css('overflow', 'hidden');
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
+		return false;
 	});	
 
 	jQuery(".open-villale-events").on('click', function(){
