@@ -41,7 +41,7 @@ function menuProduction(){
 	});
 
 	jQuery('#rc-cola-btn').on('click', function(){
-		jQuery(htmlContainer).animate({scrollTop:cola.top}, 1000);
+		jQuery(htmlContainer).animate({scrollTop:cola.top + 800 }, 1000);
 	});
 
 	jQuery('#art-walk-btn').on('click', function(){
