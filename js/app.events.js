@@ -14,8 +14,8 @@ $(document).ready(function(){
         }
     };
 
-    var jssor_sliderUno = new $JssorSlider$("slider-list-gallery", options);
-    var jssor_sliderTres = new $JssorSlider$("slider-rc-gallery", options);
+    var jssor_sliderDos = new $JssorSlider$("slider-basel-gallery", options)
+    var jssor_sliderCuatro = new $JssorSlider$("slider-walk-gallery", options);
 
     function ScaleSlider() {
         var parentWidth = jssor_sliderUno.$Elmt.parentNode.clientWidth;
