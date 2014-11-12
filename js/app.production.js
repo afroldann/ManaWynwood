@@ -28,9 +28,10 @@ $(document).ready(function(){
         else
             window.setTimeout(ScaleSlider, 30);
     }
-    ScaleSlider();
+    
+    //ScaleSlider();
     
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-        $(window).bind('resize', ScaleSlider);
+    //    $(window).bind('resize', ScaleSlider);
     }
 });

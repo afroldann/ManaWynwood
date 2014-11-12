@@ -18,19 +18,19 @@ $(document).ready(function(){
     var jssor_sliderCuatro = new $JssorSlider$("slider-walk-gallery", options);
 
     function ScaleSlider() {
-        var parentWidth = jssor_sliderUno.$Elmt.parentNode.clientWidth;
+        var parentWidth = jssor_sliderDos.$Elmt.parentNode.clientWidth;
         
         if (parentWidth) {
             var sliderWidth = parentWidth;
             sliderWidth = Math.min(sliderWidth);
-            jssor_sliderUno.$ScaleWidth(sliderWidth);
+            jssor_sliderDos.$ScaleWidth(sliderWidth);
         }
         else
             window.setTimeout(ScaleSlider, 30);
     }
-    ScaleSlider();
+    //ScaleSlider();
     
     if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-        $(window).bind('resize', ScaleSlider);
+        //$(window).bind('resize', ScaleSlider);
     }
 });
