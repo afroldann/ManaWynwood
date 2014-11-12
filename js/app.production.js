@@ -14,24 +14,7 @@ $(document).ready(function(){
         }
     };
 
-    var jssor_sliderUno = new $JssorSlider$("slider-list-gallery", options);
+    var jssor_sliderUno = new $JssorSlider$("slider-list-gallery-id", options);
     var jssor_sliderTres = new $JssorSlider$("slider-rc-gallery", options);
 
-    function ScaleSlider() {
-        var parentWidth = jssor_sliderUno.$Elmt.parentNode.clientWidth;
-        
-        if (parentWidth) {
-            var sliderWidth = parentWidth;
-            sliderWidth = Math.min(sliderWidth);
-            jssor_sliderUno.$ScaleWidth(sliderWidth);
-        }
-        else
-            window.setTimeout(ScaleSlider, 30);
-    }
-    
-    //ScaleSlider();
-    
-    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-    //    $(window).bind('resize', ScaleSlider);
-    }
 });

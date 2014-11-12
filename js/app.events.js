@@ -16,21 +16,5 @@ $(document).ready(function(){
 
     var jssor_sliderDos = new $JssorSlider$("slider-basel-gallery", options)
     var jssor_sliderCuatro = new $JssorSlider$("slider-walk-gallery", options);
-
-    function ScaleSlider() {
-        var parentWidth = jssor_sliderDos.$Elmt.parentNode.clientWidth;
-        
-        if (parentWidth) {
-            var sliderWidth = parentWidth;
-            sliderWidth = Math.min(sliderWidth);
-            jssor_sliderDos.$ScaleWidth(sliderWidth);
-        }
-        else
-            window.setTimeout(ScaleSlider, 30);
-    }
-    //ScaleSlider();
     
-    if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-        //$(window).bind('resize', ScaleSlider);
-    }
 });
