@@ -3,28 +3,31 @@
 		<div class="large-6 columns form-content">
 			<h3>Contact us</h3>
 			<p>Send us your comments, we will be attentive and respond as quickly as possible</p>
-			<form id="mana-contact">
+			<form id="mana-contact" action="http://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST">
 				<div>
-					<input type="text" placeholder="first name" required autofocus>
+					<input type="text" placeholder="first name" name="Name" required autofocus>
 					<i>*</i>
 				</div>
 				<div>
-					<input type="text" placeholder="last name" required>
+					<input type="text" placeholder="last name" name="Lastname" required>
 					<i>*</i>
 				</div>
 				<div>
-					<input type="email" placeholder="e-mail" required>
+					<input type="email" placeholder="e-mail" name="mailfrom" required>
 					<i>*</i>
 				</div>
 				<div>
-					<input type="tel" placeholder="phone">
+					<input type="tel" placeholder="phone" name="Phone">
 				</div>
 				<div>
 					<i>*</i>
-					<textarea placeholder="type your message here" required></textarea>
+					<textarea placeholder="type your message here" name="Message" required></textarea>
 				</div>
 				<div class="submit-button right">
-					<input type="submit" value="send">
+					<input type="hidden" name="sendtoemail" value="info@manawynwood.com">
+					<input type="hidden" name="redirect" value="http://www.manawynwood.com">
+			        <input type="hidden" name="subject" value="message from info@manawynwood.com">
+					<input type="submit" value="Send Email">
 				</div>
 			</form>
 			<span>Fields with <i>*</i> are mandatory</span>
