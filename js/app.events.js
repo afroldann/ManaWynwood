@@ -1,20 +1,35 @@
-$(document).ready(function(){ 
-    var options = {
-        $BulletNavigatorOptions: {
-            $Class: $JssorBulletNavigator$,
-            $ChanceToShow: 2,                 
-            $AutoCenter: 1,
-            $SpacingX: 25
-        },
-        $ArrowNavigatorOptions: {                           
-            $Class: $JssorArrowNavigator$,                  
-            $ChanceToShow: 2,
-            $AutoCenter: 2,
-            $Steps: 1
-        }
-    };
+$(document).ready(function(){
 
-    var jssor_sliderDos = new $JssorSlider$("slider-basel-gallery", options)
-    var jssor_sliderCuatro = new $JssorSlider$("slider-walk-gallery", options);
-    
+    jQuery(".content-sliders-gallery").royalSlider({
+        keyboardNavEnabled: true,
+        autoHeight: true,
+        autoScaleSlider: true,
+        arrowsNavAutoHide: false,
+        arrowsNav: true,
+        loop: true,
+        controlNavigation: 'none',
+        autoPlay: {
+            enabled: false,
+            pauseOnHover: false,
+            stopAtAction: false,
+            delay: 8000
+        }
+    });
+
+     jQuery(".content-sliders-gallery-basel").royalSlider({
+        keyboardNavEnabled: true,
+        autoHeight: true,
+        autoScaleSlider: false,
+        arrowsNavAutoHide: false,
+        arrowsNav: true,
+        loop: true,
+        controlNavigation: 'none',
+        autoPlay: {
+            enabled: false,
+            pauseOnHover: false,
+            stopAtAction: false,
+            delay: 8000
+        }
+    });
+     
 });

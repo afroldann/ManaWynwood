@@ -179,7 +179,7 @@ jQuery(document).ready(function($){
 	  		jQuery( "header" ).addClass( "scrolled" );
 	   }
 	});
-	
+
 	var sliderEvents = jQuery(".slider-events-production").royalSlider({
         keyboardNavEnabled: true,
         autoHeight: true,
