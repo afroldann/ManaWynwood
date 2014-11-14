@@ -119,7 +119,7 @@ $(document).ready(function(){
             delay: 8000
         }
     });    
-
+    
     $("#links-basel").royalSlider({
         keyboardNavEnabled: true,
         autoHeight: true,

@@ -36,7 +36,6 @@ $(document).ready(function(){
         return false;
     }); 
 
-
     var sliderEvents = $("#events-rc").royalSlider({
         keyboardNavEnabled: true,
         autoHeight: true,
