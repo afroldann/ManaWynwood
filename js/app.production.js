@@ -81,3 +81,17 @@ $(document).ready(function(){
     });
 
 });
+
+$(function(){
+    $('#links-basel').slides({
+        preload: true,
+        generateNextPrev: true
+    });
+});
+    
+$(function(){
+    $('#links-village-gallery').slides({
+        preload: true,
+        generateNextPrev: true
+    });
+});

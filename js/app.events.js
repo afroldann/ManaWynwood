@@ -75,18 +75,16 @@ $(document).ready(function(){
 
     }).data('royalSlider');
 
-    $('.three').on('click', function(){
-        sliderBasel.goTo(2);
-    });    
-
-    $('.two').on('click', function(){
+    $('.two.open-basel-events').on('click', function(){
         sliderBasel.goTo(1);
     });
     
-    $('.one').on('click', function(){
+    $('.one.open-basel-events').on('click', function(){
         sliderBasel.goTo(0);
     });
     
+
+
     var sliderPlants = $('#sliderPlants').royalSlider({
 
     }).data('royalSlider');
@@ -102,38 +100,18 @@ $(document).ready(function(){
     $('.lotUno.one').on('click', function(){
         sliderPlants.goTo(0);
     });
+});
 
-    /*
-    $("#gallery-walk").royalSlider({
-        keyboardNavEnabled: true,
-        autoHeight: true,
-        autoScaleSlider: true,
-        arrowsNavAutoHide: false,
-        arrowsNav: true,
-        loop: true,
-        controlNavigation: 'none',
-        autoPlay: {
-            enabled: false,
-            pauseOnHover: false,
-            stopAtAction: false,
-            delay: 8000
-        }
-    });    
-    
-    $("#links-basel").royalSlider({
-        keyboardNavEnabled: true,
-        autoHeight: true,
-        autoScaleSlider: true,
-        arrowsNavAutoHide: false,
-        arrowsNav: true,
-        loop: true,
-        controlNavigation: 'none',
-        autoPlay: {
-            enabled: false,
-            pauseOnHover: false,
-            stopAtAction: false,
-            delay: 8000
-        }
+$(function(){
+    $('#gallery-walk').slides({
+        preload: true,
+        generateNextPrev: true
     });
-    */
+});
+    
+$(function(){
+    $('#links-basel').slides({
+        preload: true,
+        generateNextPrev: true
+    });
 });
