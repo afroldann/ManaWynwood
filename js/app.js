@@ -89,83 +89,11 @@ jQuery(document).ready(function($){
 		return false;
 	}
 
-	jQuery(".desc").on('click', openItem );
-	
-	jQuery("#gallery-slider,#gallery-slider a.link-plus").on('click', function(){
-		setTimeout(function(){
-	  		jQuery( "header" ).removeClass( "scrolled" );
-			jQuery("#gallery").addClass("openGallery");
-			jQuery('html').css('overflow', 'hidden');
-		});
-		return false;
-	});	
-
-	jQuery("#gallery-basel, #gallery-basel .link-plus").on('click', function(){
-		setTimeout(function(){
-			jQuery("#gallery-basel-container").addClass("openGallery");
-			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
-		});
-		return false;
-	});		
-
-	jQuery("#gallery-rc,#gallery-rc .link-plus").on('click', function(){
-		setTimeout(function(){
-			jQuery("#gallery-rc-container").addClass("openGallery");
-			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
-		});
-		return false;
-	});		
-
-	jQuery(".open-walk-gallery, .open-walk-gallery .link-plus").on('click', function(){
-		setTimeout(function(){
-			jQuery("#gallery-walk-container").addClass("openGallery");
-			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
-		});
-		return false;
-	});	
-
-	jQuery(".open-villale-events").on('click', function(){
-		setTimeout(function(){
-			jQuery("#village-events").addClass("openEvents");
-			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
-		});
-		return false;
-	});		
-
-	jQuery(".open-basel-events").on('click', function(){
-		setTimeout(function(){
-			jQuery("#basel-events").addClass("openEvents");
-			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
-		});
-		return false;
-	});		
+	jQuery(".desc").on('click', openItem );	
 
 	jQuery(".container-lots a").on('click', function(){
 		setTimeout(function(){
 			jQuery("#walk-plants").addClass("openEvents");
-			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
-		});
-		return false;
-	});	
-
-	jQuery(".open-cola-events").on('click', function(){
-		setTimeout(function(){
-			jQuery("#cola-events").addClass("openEvents");
-			jQuery('html').css('overflow', 'hidden');
-	  		jQuery( "header" ).removeClass( "scrolled" );
-		});
-		return false;
-	});	
-
-	jQuery(".open-walk-events").on('click', function(){
-		setTimeout(function(){
-			jQuery("#walk-events").addClass("openEvents");
 			jQuery('html').css('overflow', 'hidden');
 	  		jQuery( "header" ).removeClass( "scrolled" );
 		});
@@ -179,63 +107,6 @@ jQuery(document).ready(function($){
 	  		jQuery( "header" ).addClass( "scrolled" );
 	   }
 	});
-
-	var sliderEvents = jQuery(".slider-events-production").royalSlider({
-        keyboardNavEnabled: true,
-        autoHeight: true,
-        autoScaleSlider: true,
-        arrowsNavAutoHide: false,
-        arrowsNav: true,
-        loop: false,
-        transitionType: 'fade',
-        autoPlay: {
-    		enabled: false,
-    		pauseOnHover: false,
-    		stopAtAction: false,
-    		delay: 8000
-    	}
-
-    }).data('royalSlider');
-
-    jQuery('.three').on('click', function(){
-    	sliderEvents.goTo(2);
-    });    
-
-    jQuery('.two').on('click', function(){
-    	sliderEvents.goTo(1);
-    });
-	
-	jQuery('.one').on('click', function(){
-    	sliderEvents.goTo(0);
-    });
-
-	var sliderPlants = jQuery(".slider-plants-production").royalSlider({
-        keyboardNavEnabled: true,
-        autoHeight: true,
-        autoScaleSlider: true,
-        arrowsNavAutoHide: false,
-        arrowsNav: true,
-        loop: false,
-        autoPlay: {
-    		enabled: true,
-    		pauseOnHover: false,
-    		stopAtAction: false,
-    		delay: 8000
-    	}
-
-    }).data('royalSlider');
-
-    jQuery('.three').on('click', function(){
-    	sliderPlants.goTo(2);
-    });    
-
-    jQuery('.two').on('click', function(){
-    	sliderPlants.goTo(1);
-    });
-	
-	jQuery('.one').on('click', function(){
-    	sliderPlants.goTo(0);
-    });
 
 
 	jQuery(".close-g").on('click', function(){
