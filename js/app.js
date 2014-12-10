@@ -243,7 +243,10 @@ jQuery(document).ready(function($){
     }
     
 	jQuery('.link').on ('click', function(){
-    	if(jQuery(this).attr('href') !== '#') {
+		if(jQuery(this).attr('target') == '_blank') {
+			window.open(this.href);
+    		return false
+		}if(jQuery(this).attr('href') !== '#') {
 	      	url = jQuery(this).attr('href');
 	      	setTimeout(function(){
 	        	gotoUrl();
