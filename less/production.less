@@ -2698,11 +2698,36 @@ html {
 	}
 }
 
-@media all and (max-width: 580px) {
+@media all and (max-width: 520px) {
+	html {
+		body {
+			&.production {
+				.main-content {
+					.production-village {
+						.video-container {
+							.video-production {
+								iframe {
+									height: auto;
+								}
+							}						
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 780px) {
 	html {
 		body {
 			&.production {
 				header {
+					height: 87px;
+					&.scrolled {
+						height: 87px;
+					}
 					.nav-production {
 						display: none;
 					}
@@ -2949,7 +2974,7 @@ html {
 							margin-left: 0;
 							.video-production {
 								iframe {
-									height: auto;
+									/*height: 500px;*/
 								}
 							} 
 
