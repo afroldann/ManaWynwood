@@ -2826,8 +2826,44 @@ html {
 							}
 						}
 					}
+					.art-walk {
+						h2 {
+							font-size: 2.2em;
+							margin-bottom: 10px;
+						}
+						.village-floor-plan {
+							.video-plane {
+								top: 0;
+								margin-top: 30px;
+							}
+						}
+					}
+					.art-basel {
+						.title {
+							h2 {
+								font-size: 2em;
+							}
+						}
+						.village-floor-plan {
+							.gallery-container {
+								&:last-child {
+									margin: 0;
+									width: 100%;
+									h2 {
+										margin-top: 0;										
+									}
+								}
+								&:first-child {
+									width: 100%;
+								}
+								&:nth-child(2) {
+									margin-left: 0;
+								}
+							}
+						} 
+					} 
 
-					.production-village {
+					.production-village, .art-walk, .art-basel {
 						margin: 0 0 50px 0;
 						.village-events {
 							.title-events {
