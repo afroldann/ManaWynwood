@@ -61,15 +61,15 @@ jQuery(document).ready(function($){
 			$('.logo h1').hide();
 		}
 		if(currSliderNum === 3 ){
-			$(logo).fadeOut(550, function(){
+			/*$(logo).fadeOut(550, function(){
 				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
-			});
+			});*/
 			$('.logo h1').hide();
 		}		
 		if(currSliderNum === 4 ){
-			$(logo).fadeOut(550, function(){
+			/*$(logo).fadeOut(550, function(){
 				$(this).attr('src','img/svg/logo.svg').fadeIn(550);
-			});
+			});*/
 			$('.logo h1').hide();
 		}
 		
