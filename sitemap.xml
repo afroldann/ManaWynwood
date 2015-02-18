@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.manawynwood.com/</loc>
+  <lastmod>2015-02-17T15:27:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.manawynwood.com/index.html</loc>
+  <lastmod>2015-02-17T15:27:12+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.manawynwood.com/events.html</loc>
+  <lastmod>2015-02-17T15:26:54+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.manawynwood.com/production.html</loc>
+  <lastmod>2015-02-17T15:27:19+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.manawynwood.com/gallery.html</loc>
+  <lastmod>2015-02-17T15:27:04+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.manawynwood.com/about-us.html</loc>
+  <lastmod>2015-02-17T15:26:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.manawynwood.com/img/Privacy-Policy-Temp.pdf</loc>
+  <lastmod>2014-12-15T18:58:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.manawynwood.com/img/Terms-of-Use.pdf</loc>
+  <lastmod>2014-12-15T18:58:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

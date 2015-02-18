@@ -3,66 +3,32 @@
 		<div class="large-6 columns form-content">
 			<h3>Contact us</h3>
 			<p>Send us your comments, we will be attentive and respond as quickly as possible</p>
-			<!--<form id="mana-contact" action="http://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST">
-				<div>
-					<input type="text" placeholder="first name" name="Name" required autofocus>
-					<i>*</i>
-				</div>
-				<div>
-					<input type="text" placeholder="last name" name="Lastname" required>
-					<i>*</i>
-				</div>
-				<div>
-					<input type="email" placeholder="e-mail" name="mailfrom" required>
-					<i>*</i>
-				</div>
-				<div>
-					<input type="tel" placeholder="phone" name="Phone">
-				</div>
-				<div>
-					<i>*</i>
-					<textarea placeholder="type your message here" name="Message" required></textarea>
-				</div>
-				<div class="submit-button right">
-					<input type="hidden" name="sendtoemail" value="info@manawynwood.com">
-					<input type="hidden" name="redirect" value="http://www.manawynwood.com">
-			        <input type="hidden" name="subject" value="message from info@manawynwood.com">
-					<input type="submit" value="Send Email">
-				</div>
-			</form>-->
-			<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
 <input type=hidden name="oid" value="00Dj0000001sfp8">
-<input type=hidden name="retURL" value="http://www.manawynwood.com/">
+<input type=hidden name="retURL" value="http://www.manawynwood.com/thanks">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
 <!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail" value="dylan@manawynwood.com">   -->
-<!--  ----------------------------------------------------------------------  -->
-<div>
-<input placeholder="first name" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-</div>
-<div>
-<input placeholder="Last Name"  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
-</div>
-<div>
-<input placeholder="Email"   id="email" maxlength="80" name="email" size="20" type="text" />
-</div>
-<div>
-<input placeholder="Phone"   id="phone" maxlength="40" name="phone" size="20" type="text" />
-</div>
-<div>
-<input placeholder="Mobile"   id="mobile" maxlength="40" name="mobile" size="20" type="text" />
-</div>
-<div>
-<input placeholder="Company"   id="company" maxlength="40" name="company" size="20" type="text" />
-</div>
-<div>
-<input placeholder="City"   id="city" maxlength="40" name="city" size="20" type="text" />
-</div>
-<div>
+ <input type="hidden" name="debug" value=1>                           
+ <input type="hidden" name="debugEmail" value="admin@manawynwood.com"> 
+
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
 <label for="country_code">Country</label><select  id="country_code" name="country_code"><option value="">--None--</option><option value="AF">Afghanistan</option>
 <option value="AX">Aland Islands</option>
 <option value="AL">Albania</option>
@@ -302,9 +268,8 @@
 <option value="YE">Yemen</option>
 <option value="ZM">Zambia</option>
 <option value="ZW">Zimbabwe</option>
-</select>
-</div>
-<div>
+</select><br>
+
 <label for="state_code">State/Province</label><select  id="state_code" name="state_code"><option value="">--None--</option><option value="AC">Acre</option>
 <option value="AG">Agrigento</option>
 <option value="AG">Aguascalientes</option>
@@ -641,11 +606,10 @@
 <option value="53">Yunnan</option>
 <option value="ZA">Zacatecas</option>
 <option value="33">Zhejiang</option>
-</select>
-</div>
-<div class="submit-button right">
+</select><br>
+
 <input type="submit" name="submit">
-</div>
+
 </form>
 			<span>Fields with <i>*</i> are mandatory</span>
 		</div>
