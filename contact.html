@@ -41,28 +41,31 @@
 <!--  <input type="hidden" name="debug" value=1>                              -->
 <!--  <input type="hidden" name="debugEmail" value="dylan@manawynwood.com">   -->
 <!--  ----------------------------------------------------------------------  -->
-<div>
+<div class="large-12 columns">
 <input placeholder="first name" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+<i>*</i>
 </div>
-<div>
+<div class="large-6 columns">
 <input placeholder="Last Name"  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+<i>*</i>
 </div>
-<div>
+<div class="large-6 columns">
 <input placeholder="Email"   id="email" maxlength="80" name="email" size="20" type="text" />
+<i>*</i>
 </div>
-<div>
+<div class="large-6 columns">
 <input placeholder="Phone"   id="phone" maxlength="40" name="phone" size="20" type="text" />
 </div>
-<div>
+<div class="large-6 columns">
 <input placeholder="Mobile"   id="mobile" maxlength="40" name="mobile" size="20" type="text" />
 </div>
-<div>
+<div class="large-6 columns">
 <input placeholder="Company"   id="company" maxlength="40" name="company" size="20" type="text" />
 </div>
-<div>
+<div class="large-6 columns">
 <input placeholder="City"   id="city" maxlength="40" name="city" size="20" type="text" />
 </div>
-<div>
+<div class="large-6 columns">
 <label for="country_code">Country</label><select  id="country_code" name="country_code"><option value="">--None--</option><option value="AF">Afghanistan</option>
 <option value="AX">Aland Islands</option>
 <option value="AL">Albania</option>
@@ -304,7 +307,7 @@
 <option value="ZW">Zimbabwe</option>
 </select>
 </div>
-<div>
+<div class="large-6 columns">
 <label for="state_code">State/Province</label><select  id="state_code" name="state_code"><option value="">--None--</option><option value="AC">Acre</option>
 <option value="AG">Agrigento</option>
 <option value="AG">Aguascalientes</option>
@@ -643,8 +646,12 @@
 <option value="33">Zhejiang</option>
 </select>
 </div>
-<div class="submit-button right">
-<input type="submit" name="submit">
+<div>
+<i>*</i>
+<textarea class="large-12 columns" placeholder="type your message here" id="Message" name="Message" required></textarea>
+</div>
+<div class="submit-button large-12 columns">
+	<input class="right" type="submit" name="submit">
 </div>
 </form>
 			<span>Fields with <i>*</i> are mandatory</span>
